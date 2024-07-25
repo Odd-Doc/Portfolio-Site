@@ -1,11 +1,12 @@
-import Navbar from "../components/navbar";
+import Navbar from "../components/navbar/navbar";
+import { Container } from "./style";
 
 const Home = () => {
   return (
-    <div className="root-container">
+    <Container>
       <h1 className="home-title">Welcome to Doc's Portfolio!</h1>
       <Navbar />
-    </div>
+    </Container>
   );
 };
 export default Home;
