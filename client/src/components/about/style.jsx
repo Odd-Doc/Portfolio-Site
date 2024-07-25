@@ -4,8 +4,6 @@ export const Container = styled.div`
   margin: 0;
   padding: 1rem;
   border: 0;
-  grid-row: 1;
-  grid-column: 1 /7;
+  background-color: cornflowerblue;
+  grid-column: 2;
 `;
-
-export const List = styled.ul``;

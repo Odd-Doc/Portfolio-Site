@@ -1,11 +1,12 @@
-
-const Navbar = () => {
+import { Container, List } from "./style";
+export const Navbar = () => {
   return (
-    <ul className="navbar">
-      <li>Projects</li>
-      <li>Skills</li>
-      <li>About Me</li>
-    </ul>
+    <Container>
+      <List>
+        <li>Projects</li>
+        <li>Skills</li>
+        <li>About Me</li>
+      </List>
+    </Container>
   );
 };
-export default Navbar;
