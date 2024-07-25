@@ -1,6 +1,4 @@
-#environment
-.env
-.vscode
+
 # Logs
 logs
 *.log
