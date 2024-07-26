@@ -1,12 +1,12 @@
-import { Container, List } from "./style";
+import { Container, Bar, Projects, Skills, About } from "./style";
 export const Navbar = () => {
   return (
     <Container>
-      <List>
-        <li>Projects</li>
-        <li>Skills</li>
-        <li>About Me</li>
-      </List>
+      <Bar>
+        <Projects>Projects</Projects>
+        <Skills>Skills</Skills>
+        <About>About Me</About>
+      </Bar>
     </Container>
   );
 };

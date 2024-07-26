@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { StyledComponentDiv } from "../styles";
 
-export const Container = styled.div`
+export const Container = styled(StyledComponentDiv)`
   margin: 0;
-  padding: 1rem;
+  padding: 0;
   border: 0;
   background-color: cornflowerblue;
-  grid-column: 2;
+  grid-area: about;
 `;
