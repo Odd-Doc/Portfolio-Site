@@ -3,7 +3,7 @@ import { StyledComponentDiv } from "../styles";
 
 export const Container = styled(StyledComponentDiv)`
   margin: 0;
-  padding: 1rem;
+  padding: 0;
   border: 0;
-  grid-area: projects;
+  grid-area: contact-me;
 `;
