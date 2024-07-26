@@ -3,13 +3,15 @@ import { Navbar } from "../components/navbar/navbar";
 import { Projects } from "../components/projects/projects";
 import { Skills } from "../components/skills/skills";
 import { ContactMe } from "../components/contactMe/contactMe";
-import { Container, HomeTitle } from "./style";
+import { Container, Header, HomeTitle } from "./style";
 
 const Home = () => {
   return (
     <Container>
       <Navbar />
-      <HomeTitle>Welcome!</HomeTitle>
+      <Header>
+        <HomeTitle>Welcome!</HomeTitle>
+      </Header>
       <Projects />
       <Skills />
       <About />

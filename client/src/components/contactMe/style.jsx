@@ -5,5 +5,5 @@ export const Container = styled(StyledComponentDiv)`
   margin: 0;
   padding: 0;
   background-color: blueviolet;
-  grid-area: contact-me;
+  /* grid-area: contact-me; */
 `;
