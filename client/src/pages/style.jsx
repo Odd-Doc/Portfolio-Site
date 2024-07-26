@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
   margin: 0;
   border: 0;
   padding: 0;
-  background: blue;
+  background: #8f8fca;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas:
     "nav"
@@ -16,12 +14,13 @@ export const Container = styled.div`
     "projects"
     "skills"
     "about"
-    "contact-me"
-    ;
+    "contact-me";
 `;
 
 export const HomeTitle = styled.h1`
-  background-color: chocolate;
   color: white;
   grid-area: header;
+  text-align: center;
+  background-color: aquamarine;
+  margin: 0;
 `;
