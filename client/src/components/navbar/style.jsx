@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyledComponentDiv } from "../styles";
+import { StyledComponentDiv, media } from "../styles";
 
 export const Container = styled.div`
   margin: 0;
@@ -9,15 +9,20 @@ export const Container = styled.div`
 
 export const Bar = styled(StyledComponentDiv)`
   display: flex;
+  padding: 1em;
   gap: 2em;
   flex-wrap: wrap;
-  background-color: tomato;
+  background-color: #000000c9;
   justify-content: flex-end;
+  ${media.sm`
+  justify-content: space-between;
+  
+  `}
 `;
 
 const NavbarItem = styled(StyledComponentDiv)`
   color: white;
-  font-size: 2rem;
+  font-size: 1rem;
 `;
 
 export const Logo = styled(NavbarItem)``;
