@@ -1,39 +1,31 @@
 import styled from "styled-components";
-import { StyledComponentDiv } from "../styles";
+import { StyledComponentDiv, media } from "../styles";
 
 export const Container = styled.div`
   margin: 0;
   padding: 0;
-  border: 0;
-  grid-area: nav;
-  display: flex;
+  /* grid-area: nav; */
 `;
 
 export const Bar = styled(StyledComponentDiv)`
-  display: grid;
-  grid-template-columns: 1fr 0.25fr 0.25fr 0.25fr;
-  grid-template-areas: "logo projects skills about";
-  width: 100vw;
-  align-items: center;
-  justify-items: flex-end;
-  background-color: tomato;
+  display: flex;
+  padding: 1em;
+  gap: 2em;
+  flex-wrap: wrap;
+  background-color: #000000c9;
+  justify-content: flex-end;
+  ${media.sm`
+  justify-content: space-between;
+  
+  `}
 `;
 
 const NavbarItem = styled(StyledComponentDiv)`
-  padding: 1rem;
   color: white;
-  font-size: 2rem;
+  font-size: 1rem;
 `;
 
-export const Logo = styled(NavbarItem)`
-  grid-area: logo;
-`;
-export const About = styled(NavbarItem)`
-  grid-area: about;
-`;
-export const Projects = styled(NavbarItem)`
-  grid-area: projects;
-`;
-export const Skills = styled(NavbarItem)`
-  grid-area: skills;
-`;
+export const Logo = styled(NavbarItem)``;
+export const About = styled(NavbarItem)``;
+export const Projects = styled(NavbarItem)``;
+export const Skills = styled(NavbarItem)``;

@@ -4,6 +4,6 @@ import { StyledComponentDiv } from "../styles";
 export const Container = styled(StyledComponentDiv)`
   margin: 0;
   padding: 0;
-  border: 0;
-  grid-area: contact-me;
+  background-color: blueviolet;
+  /* grid-area: contact-me; */
 `;

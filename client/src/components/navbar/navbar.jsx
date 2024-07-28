@@ -4,7 +4,9 @@ export const Navbar = () => {
     <Container>
       <Bar>
         <Projects>Projects</Projects>
-        <Skills>Skills</Skills>
+        <Skills>
+          <a>Skills</a>
+        </Skills>
         <About>About Me</About>
       </Bar>
     </Container>
