@@ -8,20 +8,16 @@ export const Container = styled.div`
 
 export const Bar = styled(StyledComponentDiv)`
   display: flex;
-  padding: 1em;
-  gap: 2em;
-  flex-wrap: wrap;
   background-color: #000000;
-  justify-content: flex-end;
+  flex-direction: column;
   ${media.sm`
-  justify-content: space-between;
+  display: none;
   
   `}
 `;
 
 const NavbarItem = styled(StyledComponentDiv)`
   color: white;
-  font-size: 1rem;
 `;
 
 export const Logo = styled(NavbarItem)``;
