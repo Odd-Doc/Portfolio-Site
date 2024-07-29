@@ -1,9 +1,13 @@
-import { Container } from "./style";
+import { StyledCard } from "../styles";
+import { Container, Title } from "./style";
 
 export const Projects = () => {
   return (
     <Container>
-      <div>Projects</div>
+      <Title>
+        <h2>Projects</h2>
+      </Title>
+      <StyledCard></StyledCard>
     </Container>
   );
 };
