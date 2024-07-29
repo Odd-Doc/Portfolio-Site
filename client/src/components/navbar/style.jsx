@@ -4,7 +4,6 @@ import { StyledComponentDiv, media } from "../styles";
 export const Container = styled.div`
   margin: 0;
   padding: 0;
-  /* grid-area: nav; */
 `;
 
 export const Bar = styled(StyledComponentDiv)`
@@ -12,7 +11,7 @@ export const Bar = styled(StyledComponentDiv)`
   padding: 1em;
   gap: 2em;
   flex-wrap: wrap;
-  background-color: #000000c9;
+  background-color: #000000;
   justify-content: flex-end;
   ${media.sm`
   justify-content: space-between;

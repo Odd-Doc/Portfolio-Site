@@ -11,8 +11,8 @@ import bgwelcome3 from "../assets/images/bg-welcome3.png";
 const Home = () => {
   return (
     <Container>
-      <Navbar />
       <Header>
+        <Navbar />
         <Avatar>
           <div>
             <img src={avatar} />
@@ -20,10 +20,10 @@ const Home = () => {
         </Avatar>
         Welcome!
       </Header>
-      <Projects />
+      {/* <Projects />
       <Skills />
       <About />
-      <ContactMe />
+      <ContactMe /> */}
     </Container>
   );
 };

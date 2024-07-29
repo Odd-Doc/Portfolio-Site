@@ -6,7 +6,9 @@ import welcomeBgImg2 from "../assets/images/bg-welcome2.png";
 import avatar from "../assets/images/avatar.png";
 
 export const Container = styled.div`
-  background: #8f8fca;
+  background: #d1ff2b;
+  /* display: flex; */
+  /* flex-direction: column; */
 `;
 
 export const Header = styled.div`
