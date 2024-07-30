@@ -1,20 +1,10 @@
-import styled, { css, keyframes, withTheme } from "styled-components";
-
-export const colorScheme = {
-  caribbeanCurrent: "#16697a",
-  moonstone: "#489fb5ff",
-  skyblue: "#82c0ccff",
-  isabelline: "#ede7e3ff",
-  orangepeel: "#ffa62bff",
-};
+import styled, { css, keyframes, createGlobalStyle } from "styled-components";
 export const colorScheme_main = {
-  blackolive: "#1f271bff",
-  blackolive_transparent: "#1f271bf2",
-  paynesgray: "#19647eff",
-  verdigris: "#28afb0ff",
-  naplesyellow: "#f4d35eff",
-  sandybrown: "#ee964bff",
-  offwhite: "#fffcf3",
+  black: "#000000ff",
+  oxfordblue: "#14213dff",
+  orangeweb: "#fca311ff",
+  platinum: "#e5e5e5ff",
+  white: "#ffffffff",
 };
 
 const device = {
@@ -61,41 +51,44 @@ export const media = {
 
 export const StyledComponentDiv = styled.div`
   color: white;
+  font-family: "Montserrat", sans-serif;
 `;
-const growAnimation = keyframes`
-  
 
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-`;
 export const SectionTitle = styled.div`
   top: 0;
   position: sticky;
-
-  /* text-align: center; */
-  background-color: ${colorScheme_main.blackolive_transparent};
-  color: ${colorScheme_main.offwhite};
+  background-color: ${colorScheme_main.oxfordblue};
+  color: white;
   h3 {
     margin: 0;
-  }
-  div {
-    width: 20px;
-    height: 3px;
-    background-color: ${colorScheme_main.sandybrown};
-    margin-top: 0;
-    padding: 0;
-    animation: ${growAnimation} 2s linear infinite;
+    text-align: center;
   }
 `;
 
+const growProgress = keyframes`
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+`;
+
+export const ProgressBar = styled.div`
+  /* width: 20%;
+  height: 12px;
+  background-color: ${colorScheme_main.orangeweb};
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: scroll()) {
+      animation: ${growProgress} linear;
+      animation-timeline: scroll();
+    }
+  } */
+`;
+
 export const StyledCard = styled.div`
-  height: 200px;
   border-style: solid;
-  margin: 2rem;
-  border-radius: 15px;
+  border-width: 2px;
+  border-radius: 8px;
 `;

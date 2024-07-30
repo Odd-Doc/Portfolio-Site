@@ -1,13 +1,14 @@
-import { StyledCard } from "../styles";
-import { Container, Title } from "./style";
+import { SectionTitle, ProgressBar } from "../styles";
+import { Container, Content, ProjectCard } from "./style";
 
 export const Projects = () => {
   return (
     <Container>
-      <Title>
-        <h2>Projects</h2>
-      </Title>
-      <StyledCard></StyledCard>
+      <SectionTitle>
+        <h3>Projects</h3>
+        <ProgressBar></ProgressBar>
+      </SectionTitle>
+      <ProjectCard />
     </Container>
   );
 };
