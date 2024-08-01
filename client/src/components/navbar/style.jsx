@@ -14,14 +14,70 @@ export const Bar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
-  background-color: white;
+  padding: 1rem;
+  background-color: ${color.platinum};
 
   a {
     text-decoration: none;
     color: black;
   }
 `;
+
+export const NavbarMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  ${media.sm`
+        position: fixed;
+        top: 3rem;
+        /* left:-100%;   */
+        left: ${(props) => (props.theme.active ? "0" : "-100%")};
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 2px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+            
+
+   
+    a {
+      color: black;
+    }
+  `}
+`;
+
+export const NavbarItem = styled.li`
+  list-style: none;
+  padding-left: 2rem;
+  ${media.sm`
+    margin: 2.5rem 0;
+
+    padding:0;
+    
+  `}
+`;
+export const NavLink = styled.a`
+  font-size: 1.2em;
+  font-weight: 400;
+  color: black;
+  &:hover {
+    color: #fca311ff;
+  }
+`;
+export const Logo = styled.a`
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #482ff7;
+  //pushes siblings to end of flex container
+  margin-right: auto;
+`;
+export const About = styled(NavbarItem)``;
+export const Projects = styled(NavbarItem)``;
+export const Skills = styled(NavbarItem)``;
 
 export const BurgerBar = styled.span`
   display: block;
@@ -57,59 +113,3 @@ export const Burger = styled.div`
    
   `}
 `;
-
-export const NavbarMenu = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-
-  ${media.sm`
-    position: fixed;
-        top: 3rem;
-        /* left:-100%;   */
-        left: ${(props) => (props.theme.active ? "0" : "-100%")};
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 2px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-            
-
-   
-    a {
-      color: black;
-    }
-  `}
-`;
-
-export const NavbarItem = styled.li`
-  list-style: none;
-  margin-left: 4rem;
-
-  ${media.sm`
-    margin: 2.5rem 0;
-
-    padding:0;
-    
-  `}
-`;
-export const NavLink = styled.a`
-  font-size: 1.2em;
-  font-weight: 400;
-  color: black;
-  &:hover {
-    color: #fca311ff;
-  }
-`;
-export const Logo = styled.a`
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #482ff7;
-`;
-export const About = styled(NavbarItem)``;
-export const Projects = styled(NavbarItem)``;
-export const Skills = styled(NavbarItem)``;

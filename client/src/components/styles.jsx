@@ -88,15 +88,11 @@ export const ProgressBar = styled.div`
   } */
 `;
 
-export const StyledCard = styled.div`
-  padding-left: 1rem;
-  padding-right: 1rem;
-`;
+export const StyledCard = styled.div``;
 export const ProjectImage = styled.img`
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  display: block;
   border-radius: 4px;
-  border-color: white;
 `;
 export const PageWrapper = styled.div`
   background: ${colorScheme_main.oxfordblue};

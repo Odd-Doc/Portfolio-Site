@@ -52,8 +52,13 @@ export const Container = styled.div`
   justify-content: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  font-size: 1.5em;
   align-items: center;
   flex-direction: column;
+
+  ${media.sm`
+    font-size: 1em;
+  `}
 `;
 
 export const Title = styled.h1`
