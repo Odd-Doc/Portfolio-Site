@@ -14,9 +14,9 @@ export const Footer = () => {
         <div>Contact</div>
         <div>About</div>
         <IconGroup>
-          <i class="devicon-github-original colored"></i>
+          <i className="devicon-github-original colored"></i>
 
-          <i class="devicon-linkedin-plain"></i>
+          <i className="devicon-linkedin-plain"></i>
           <img src={dcIcon} />
         </IconGroup>
       </Content>
