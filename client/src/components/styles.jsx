@@ -52,6 +52,7 @@ export const media = {
 export const StyledComponentDiv = styled.div`
   color: white;
   font-family: "Montserrat", sans-serif;
+  padding: 1rem;
 `;
 
 export const SectionTitle = styled.div`
@@ -88,7 +89,21 @@ export const ProgressBar = styled.div`
 `;
 
 export const StyledCard = styled.div`
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 8px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+`;
+export const ProjectImage = styled.img`
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border-color: white;
+`;
+export const PageWrapper = styled.div`
+  background: ${colorScheme_main.oxfordblue};
+  display: flex;
+  flex-direction: row;
+  ${media.sm`
+    flex-direction: column;
+  
+  `}
 `;

@@ -39,6 +39,12 @@ from {
 
 `;
 
+const moveArrow = keyframes`
+ 0% {transform: translateY(0px);}
+ 50% {transform: translateY(8px);}
+	100% {transform: translateY(0px);}
+`;
+
 export const Container = styled.div`
   color: white;
   height: 100vh;
@@ -65,41 +71,25 @@ export const MyName = styled.div`
 export const BlinkingCaret = styled.div`
   animation: ${blinkingCaret} 0.75s ease-in-out infinite;
 `;
-export const Content = styled.h4`
+export const Content = styled.h3`
   animation: ${slideInLeft} 1s, ${fadeIn} 1s linear;
   padding: 0;
   margin: 0;
-`;
-export const ViewWork = styled(StyledCard)`
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 0.8em;
-  font-weight: lighter;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  span {
-    align-self: flex-end;
+  p {
+    font-size: 0.6em;
   }
 `;
-// export const Avatar = styled.div`
-//   padding-left: 0;
-//   padding-right: 0;
-//   ${media.sm`
-//     padding-left: 0;
-//   padding-right: 0;
-
-//   `}
-//   div {
-//     border-style: solid;
-//     border-color: white;
-//     border-width: 2px;
-//     display: flex;
-//     border-radius: 50%;
-//   }
-//   img {
-//     /* without this, the avatar img overflows
-//     when the screen width is less than the image */
-
-//     max-width: 100%;
-//   }
-// `;
+export const ViewWork = styled(StyledCard)`
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1rem;
+  animation: ${moveArrow} 1s infinite;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+`;
