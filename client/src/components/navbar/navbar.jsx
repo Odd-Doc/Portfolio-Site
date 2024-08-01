@@ -25,7 +25,7 @@ export const Navbar = () => {
   return (
     <ThemeProvider theme={theme}>
       <Bar>
-        <Logo href="#">WebDev.</Logo>
+        <Logo href="#">GP_</Logo>
         <NavbarMenu $isActive={isActive}>
           <NavbarItem>
             <NavLink href="#">Projects</NavLink>

@@ -1,6 +1,11 @@
 import { Link, Outlet } from "react-router-dom";
 import { SectionTitle, ProgressBar } from "../styles";
-import { BackflowBuddyProject, Container, Content, ProjectCard } from "./style";
+import {
+  BackflowBuddyProject,
+  Container,
+  ImageContainer,
+  ProjectCard,
+} from "./style";
 import bb from "../../assets/images/bb-mainmenu.png";
 export const Projects = () => {
   return (
@@ -9,12 +14,12 @@ export const Projects = () => {
         <SectionTitle>
           <h3>Projects</h3>
           <ProgressBar></ProgressBar>
-        </SectionTitle>
-        <Link to="/projects/backflowbuddy">
-          <ProjectCard>
+        </SectionTitle>{" "}
+        <ImageContainer>
+          <Link to="/projects/backflowbuddy">
             <BackflowBuddyProject src={bb} />
-          </ProjectCard>
-        </Link>
+          </Link>{" "}
+        </ImageContainer>
       </Container>
     </>
   );

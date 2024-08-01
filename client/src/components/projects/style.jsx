@@ -10,11 +10,13 @@ import {
 
 export const Container = styled(StyledComponentDiv)`
   margin: 0;
-  padding: 1rem;
+  /* padding: 1rem; */
   display: flex;
   flex-direction: column;
 `;
 
-export const Content = styled(StyledComponentDiv)``;
+export const ImageContainer = styled.div`
+  align-self: center;
+`;
 export const ProjectCard = styled(StyledCard)``;
 export const BackflowBuddyProject = styled(ProjectImage)``;
