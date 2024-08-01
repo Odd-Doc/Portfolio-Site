@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import bb from "../../assets/images/bb.png";
+import bb from "../../assets/images/bb-mainmenu.png";
 
 import {
   StyledComponentDiv,
   colorScheme_main as color,
   StyledCard,
+  ProjectImage,
 } from "../styles";
 
 export const Container = styled(StyledComponentDiv)`
@@ -12,15 +13,8 @@ export const Container = styled(StyledComponentDiv)`
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
 `;
 
 export const Content = styled(StyledComponentDiv)``;
-export const ProjectCard = styled(StyledCard)`
-  background-repeat: no-repeat;
-  background-image: url(${bb});
-  width: 80%;
-  height: 0;
-  padding-top: 50%;
-  background-size: cover;
-`;
+export const ProjectCard = styled(StyledCard)``;
+export const BackflowBuddyProject = styled(ProjectImage)``;
