@@ -101,7 +101,7 @@ export const ProjectImage = styled.img`
 export const PageWrapper = styled.div`
   background: ${colorScheme_main.oxfordblue};
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   ${media.sm`
     flex-direction: column;
   

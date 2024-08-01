@@ -19,7 +19,7 @@ export const Skills = () => {
         <i className="devicon-nodejs-plain colored"></i>
         <i className="devicon-unity-plain"></i>
         <i className="devicon-blender-original colored"></i>
-        <i class="devicon-csharp-plain-wordmark"></i>
+        <i className="devicon-csharp-plain-wordmark"></i>
       </Content>
     </Container>
   );
