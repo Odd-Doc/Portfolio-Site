@@ -3,7 +3,6 @@ import {
   Container,
   Content,
   Header,
-  Image,
   ImagesGroup,
   NewTabLink,
 } from "./style";
@@ -49,10 +48,10 @@ export const BackflowBuddy = () => {
       </a>
 
       <ImagesGroup>
-        <Image src={bb1} />
-        <Image src={bb2} />
-        <Image src={bb3} />
-        <Image src={bb4} />
+        <img src={bb1} />
+        <img src={bb2} />
+        <img src={bb3} />
+        <img src={bb4} />
       </ImagesGroup>
       <Footer />
     </Container>

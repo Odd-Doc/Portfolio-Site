@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css, keyframes, createGlobalStyle } from "styled-components";
 export const colorScheme_main = {
   black: "#000000ff",
@@ -53,6 +54,11 @@ export const StyledComponentDiv = styled.div`
   color: white;
   font-family: "Montserrat", sans-serif;
   padding: 1rem;
+  font-size: 1.25em;
+  ${media.sm`
+    font-size: 1em;
+  
+  `}
 `;
 
 export const SectionTitle = styled.div`
@@ -60,10 +66,9 @@ export const SectionTitle = styled.div`
   position: sticky;
   background-color: ${colorScheme_main.oxfordblue};
   color: white;
-  h3 {
-    margin: 0;
-    text-align: center;
-  }
+  margin: 0;
+  text-align: center;
+  padding-bottom: 2rem;
 `;
 
 const growProgress = keyframes`
@@ -88,18 +93,29 @@ export const ProgressBar = styled.div`
   } */
 `;
 
-export const StyledCard = styled.div``;
-export const ProjectImage = styled.img`
-  max-width: 100%;
-  display: block;
+export const StyledCard = styled.div`
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  padding-bottom: 200px;
+`;
+export const ProjectImageCard = styled(Link)`
   border-radius: 4px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 510px;
+  background-size: cover;
+  background-color: blue;
+  text-decoration: none;
+  display: block;
+  color: inherit;
+  background-position: center center;
+
+  ${media.sm`
+  height: 250px;
+  `}
 `;
 export const PageWrapper = styled.div`
   background: ${colorScheme_main.oxfordblue};
-  display: flex;
-  flex-direction: column;
-  ${media.sm`
-    flex-direction: column;
-  
-  `}
 `;

@@ -5,18 +5,17 @@ import {
   StyledComponentDiv,
   colorScheme_main as color,
   StyledCard,
-  ProjectImage,
+  ProjectImageCard,
+  SectionTitle,
 } from "../styles";
 
 export const Container = styled(StyledComponentDiv)`
   margin: 0;
-  /* padding: 1rem; */
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
 `;
 
-export const ImageContainer = styled.div`
-  align-self: center;
+export const ImageContainer = styled.div``;
+export const ProjectCard = styled(ProjectImageCard)`
+  background-image: url(${bb});
 `;
-export const ProjectCard = styled(StyledCard)``;
-export const BackflowBuddyProject = styled(ProjectImage)``;
+export const Title = styled(SectionTitle)``;

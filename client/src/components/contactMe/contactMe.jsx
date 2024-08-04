@@ -2,7 +2,7 @@ import { Container } from "./style";
 
 export const ContactMe = () => {
   return (
-    <Container>
+    <Container id="contact">
       <h1>Lets talk.</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et

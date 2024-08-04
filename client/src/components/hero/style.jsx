@@ -87,7 +87,7 @@ export const Content = styled.h3`
     font-size: 0.6em;
   }
 `;
-export const ViewWork = styled(StyledCard)`
+export const ViewWork = styled.div`
   color: white;
   position: absolute;
   bottom: 0;

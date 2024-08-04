@@ -25,16 +25,16 @@ export const Navbar = () => {
   return (
     <ThemeProvider theme={theme}>
       <Bar>
-        <Logo href="#">GP_</Logo>
+        <Logo to="#">GP_</Logo>
         <NavbarMenu $isActive={isActive}>
           <NavbarItem>
-            <NavLink href="#">Projects</NavLink>
+            <NavLink to="#projects">Projects</NavLink>
           </NavbarItem>
           <NavbarItem>
-            <NavLink href="#">About</NavLink>
+            <NavLink to="#about">About</NavLink>
           </NavbarItem>
           <NavbarItem>
-            <NavLink href="#">Contact</NavLink>
+            <NavLink to="#contact">Contact</NavLink>
           </NavbarItem>
         </NavbarMenu>
         <div onClick={handleBurgerClick}>

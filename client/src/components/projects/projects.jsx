@@ -1,11 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
-import { SectionTitle, ProgressBar } from "../styles";
-import {
-  BackflowBuddyProject,
-  Container,
-  ImageContainer,
-  ProjectCard,
-} from "./style";
+import { ProgressBar, ProjectImageCard, SectionTitle } from "../styles";
+import { Container, ProjectCard } from "./style";
 import bb from "../../assets/images/bb-mainmenu.png";
 export const Projects = () => {
   return (
@@ -13,13 +8,15 @@ export const Projects = () => {
       <Container id="projects">
         <SectionTitle>
           <h3>Projects</h3>
-          <ProgressBar></ProgressBar>
-        </SectionTitle>{" "}
-        <ImageContainer>
-          <Link to="/projects/backflowbuddy">
-            <BackflowBuddyProject src={bb} />
-          </Link>{" "}
-        </ImageContainer>
+        </SectionTitle>
+        {/* <ProgressBar></ProgressBar> */}
+        <ProjectCard to="/projects/backflowbuddy">
+          <div className="project-title">Backflow Device Testing Simulator</div>
+          <div className="project-synop">
+            interactive tool designed to help users prepare for state licensing
+            exams.
+          </div>
+        </ProjectCard>
       </Container>
     </>
   );

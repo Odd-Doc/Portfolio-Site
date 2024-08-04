@@ -3,7 +3,7 @@ import { Container, Content } from "./style";
 
 export const About = () => {
   return (
-    <Container>
+    <Container id="about">
       <SectionTitle>
         <h3>About Me</h3>
         <ProgressBar></ProgressBar>

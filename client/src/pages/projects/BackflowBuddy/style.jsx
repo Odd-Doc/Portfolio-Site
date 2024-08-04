@@ -4,7 +4,6 @@ import {
   StyledComponentDiv,
   media,
   colorScheme_main as color,
-  ProjectImage,
   PageWrapper,
 } from "../../../components/styles";
 
@@ -40,7 +39,6 @@ export const NewTabLink = styled.span`
   display: flex;
   align-items: center;
 `;
-export const Image = styled(ProjectImage)``;
 export const ImagesGroup = styled.div`
   padding: 2rem;
   display: flex;
