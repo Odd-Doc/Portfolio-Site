@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled, { css, keyframes, createGlobalStyle } from "styled-components";
+
 export const colorScheme_main = {
   black: "#000000ff",
   oxfordblue: "#14213dff",
@@ -49,7 +50,16 @@ export const media = {
     }
   `,
 };
-
+const reveal = keyframes`
+  	from {
+		opacity: 0;
+		clip-path: inset(45% 20% 45% 20%);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0% 0% 0% 0%);
+	}
+`;
 export const StyledComponentDiv = styled.div`
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -62,10 +72,9 @@ export const StyledComponentDiv = styled.div`
 `;
 
 export const SectionTitle = styled.div`
-  top: 0;
-  position: sticky;
-  background-color: ${colorScheme_main.oxfordblue};
-  color: white;
+  /* top: 0;
+  position: sticky; */
+  color: ${colorScheme_main.oxfordblue};
   margin: 0;
   text-align: center;
   padding-bottom: 2rem;
@@ -104,16 +113,25 @@ export const ProjectImageCard = styled(Link)`
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  height: 510px;
+  height: 550px;
   background-size: cover;
   background-color: blue;
   text-decoration: none;
   display: block;
   color: inherit;
   background-position: center center;
+  box-shadow: black -20px 10px 75px;
+  .project-title-wrapper {
+    animation: ${reveal} 1s linear;
 
+    /* Tweak range when effect should run*/
+
+    /* position: fixed;
+    left: -100%; */
+  }
   ${media.sm`
   height: 250px;
+  background-position:center;
   `}
 `;
 export const PageWrapper = styled.div`

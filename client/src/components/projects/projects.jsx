@@ -11,10 +11,14 @@ export const Projects = () => {
         </SectionTitle>
         {/* <ProgressBar></ProgressBar> */}
         <ProjectCard to="/projects/backflowbuddy">
-          <div className="project-title">Backflow Device Testing Simulator</div>
-          <div className="project-synop">
-            interactive tool designed to help users prepare for state licensing
-            exams.
+          <div className="project-title-wrapper">
+            <div className="project-title">
+              Backflow Device Testing Simulator
+            </div>
+            <div className="project-synop">
+              interactive tool designed to help users prepare for state
+              licensing exams.
+            </div>
           </div>
         </ProjectCard>
       </Container>

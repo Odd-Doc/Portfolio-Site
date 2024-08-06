@@ -10,12 +10,12 @@ import {
 } from "../styles";
 
 export const Container = styled(StyledComponentDiv)`
-  margin: 0;
-  justify-content: center;
+  background-color: ${color.platinum};
 `;
 
 export const ImageContainer = styled.div``;
 export const ProjectCard = styled(ProjectImageCard)`
   background-image: url(${bb});
+  margin-bottom: 2rem;
 `;
 export const Title = styled(SectionTitle)``;
