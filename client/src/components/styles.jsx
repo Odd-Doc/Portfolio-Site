@@ -122,12 +122,7 @@ export const ProjectImageCard = styled(Link)`
   background-position: center center;
   box-shadow: black -20px 10px 75px;
   .project-title-wrapper {
-    animation: ${reveal} 1s linear;
-
-    /* Tweak range when effect should run*/
-
-    /* position: fixed;
-    left: -100%; */
+    color: ${(props) => (props.theme.view ? "red" : "blue")};
   }
   ${media.sm`
   height: 250px;
