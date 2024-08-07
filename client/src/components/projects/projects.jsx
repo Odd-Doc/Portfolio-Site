@@ -20,7 +20,7 @@ export const Projects = () => {
           <h3>Projects</h3>
         </SectionTitle>
 
-        <ProjectCard to="/projects/backflowbuddy">
+        <ProjectCard className="project-card" to="/projects/backflowbuddy">
           <div className="project-title-wrapper">
             <div className="project-title">
               Backflow Device Testing Simulator

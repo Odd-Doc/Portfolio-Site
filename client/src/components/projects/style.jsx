@@ -15,25 +15,6 @@ export const ProjectCard = styled(ProjectImageCard)`
 `;
 export const Container = styled(StyledComponentDiv)`
   background-color: ${color.platinum};
-  ${ProjectCard} {
-    transform: ${(props) =>
-      props.theme.view ? "translateX(0%)" : "translateX(200%)"};
-    transition: 1s;
-    .project-title-wrapper {
-      position: fixed;
-      transform: ${(props) =>
-        props.theme.view ? "translateX(-15%)" : "translateX(-500%)"};
-      border-radius: 5px;
-      transition: 2s;
-      padding: 2rem;
-      bottom: -10px;
-      background-color: ${color.oxfordblueTransparent};
-      ${media.sm`
-      font-size: 0.9em;
-      padding:1rem;
-  `}
-    }
-  }
 `;
 
 export const ImageContainer = styled.div``;
