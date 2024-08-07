@@ -69,7 +69,7 @@ export const Title = styled.h1`
 `;
 export const MyName = styled.div`
   letter-spacing: 0.1em;
-  //target specific character(s) and have space compiled from jsx
+  //target specific character(s) and have white space compiled from jsx
   white-space: pre-wrap;
   color: ${color.orangeweb};
 `;

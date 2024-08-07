@@ -3,6 +3,8 @@ import {
   StyledComponentDiv,
   colorScheme_main as color,
   StyledCard,
+  SectionTitle,
+  media,
 } from "../styles";
 
 export const Container = styled(StyledComponentDiv)`
@@ -16,7 +18,15 @@ export const Content = styled(StyledComponentDiv)`
   justify-content: center;
   gap: 1rem;
   i {
-    font-size: 2em;
+    font-size: 5em;
   }
 `;
 export const ProjectCard = styled(StyledCard)``;
+export const Title = styled(SectionTitle)`
+  color: white;
+  ${media.sm`
+  padding-bottom: 1rem;
+    
+  
+  `}
+`;

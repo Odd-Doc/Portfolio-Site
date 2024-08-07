@@ -5,7 +5,7 @@ import {
   colorScheme_main as color,
 } from "../styles";
 // import { Link } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 
 export const Container = styled.div`
   margin: 0;
@@ -62,7 +62,7 @@ export const NavbarItem = styled.li`
     
   `}
 `;
-export const NavLink = styled(Link)`
+export const NavLink = styled(HashLink)`
   font-size: 1.2em;
   font-weight: 400;
   color: black;
@@ -70,7 +70,7 @@ export const NavLink = styled(Link)`
     color: #fca311ff;
   }
 `;
-export const Logo = styled(Link)`
+export const Logo = styled(HashLink)`
   font-size: 1.8rem;
   font-weight: 500;
   color: #482ff7;

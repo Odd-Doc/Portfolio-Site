@@ -4,6 +4,7 @@ import styled, { css, keyframes, createGlobalStyle } from "styled-components";
 export const colorScheme_main = {
   black: "#000000ff",
   oxfordblue: "#14213dff",
+  oxfordblueTransparent: "#14213dd7",
   orangeweb: "#fca311ff",
   platinum: "#e5e5e5ff",
   white: "#ffffffff",
@@ -60,6 +61,7 @@ const reveal = keyframes`
 		clip-path: inset(0% 0% 0% 0%);
 	}
 `;
+
 export const StyledComponentDiv = styled.div`
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -90,6 +92,23 @@ const growProgress = keyframes`
   }
 `;
 
+const slideInRight = keyframes`
+ 0% {
+    transform: translateX(-20%)
+  }
+  100% {
+    transform: translateX(0%)
+  }
+`;
+const slideInLeft = keyframes`
+ 0% {
+    transform: translateX(20%)
+  }
+  100% {
+    transform: translateX(0%)
+  }
+`;
+
 export const ProgressBar = styled.div`
   /* width: 20%;
   height: 12px;
@@ -110,7 +129,7 @@ export const StyledCard = styled.div`
 `;
 export const ProjectImageCard = styled(Link)`
   border-radius: 4px;
-  width: 70%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   height: 550px;
@@ -121,9 +140,7 @@ export const ProjectImageCard = styled(Link)`
   color: inherit;
   background-position: center center;
   box-shadow: black -20px 10px 75px;
-  .project-title-wrapper {
-    color: ${(props) => (props.theme.view ? "red" : "blue")};
-  }
+
   ${media.sm`
   height: 250px;
   background-position:center;

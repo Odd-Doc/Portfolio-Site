@@ -1,11 +1,7 @@
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import {
-  Container,
   Bar,
-  Projects,
-  Skills,
-  About,
   Logo,
   NavbarMenu,
   NavbarItem,

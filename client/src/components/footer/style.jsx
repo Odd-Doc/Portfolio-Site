@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { HashLink } from "react-router-hash-link";
 
 import {
   StyledComponentDiv,
@@ -10,12 +11,13 @@ export const Container = styled(StyledComponentDiv)`
   background-color: ${color.platinum};
 `;
 
-export const Content = styled(StyledComponentDiv)`
+export const Content = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   color: black;
   font-size: 1.1em;
-  padding: 3rem;
+  padding: 2rem;
+  justify-content: space-between;
   ${media.sm`
     
     flex-direction: column;
@@ -34,4 +36,8 @@ export const IconGroup = styled.div`
   img {
     height: 16px;
   }
+`;
+export const NavLink = styled(HashLink)`
+  text-decoration: none;
+  color: inherit;
 `;

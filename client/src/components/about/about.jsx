@@ -1,13 +1,16 @@
-import { SectionTitle, ProgressBar } from "../styles";
-import { Container, Content } from "./style";
-
+import { ProgressBar } from "../styles";
+import { Container, Content, Title, Avatar } from "./style";
+import avatar from "../../assets/images/avatar.png";
 export const About = () => {
   return (
     <Container id="about">
-      <SectionTitle>
+      <Title>
         <h3>About Me</h3>
         <ProgressBar></ProgressBar>
-      </SectionTitle>
+      </Title>
+      <Avatar>
+        <img src={avatar} />
+      </Avatar>
 
       <Content>
         I’m passionate about building things, whether it’s a physical project or

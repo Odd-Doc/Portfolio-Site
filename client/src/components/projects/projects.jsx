@@ -15,12 +15,12 @@ export const Projects = () => {
   };
   return (
     <ThemeProvider theme={theme}>
-      <Container id="projects">
+      <Container ref={ref} id="projects">
         <SectionTitle>
           <h3>Projects</h3>
         </SectionTitle>
-        {/* <ProgressBar></ProgressBar> */}
-        <ProjectCard ref={ref} to="/projects/backflowbuddy">
+
+        <ProjectCard to="/projects/backflowbuddy">
           <div className="project-title-wrapper">
             <div className="project-title">
               Backflow Device Testing Simulator

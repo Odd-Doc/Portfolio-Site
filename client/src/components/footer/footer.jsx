@@ -1,5 +1,5 @@
 import { SectionTitle } from "../styles";
-import { Container, Content, IconGroup } from "./style";
+import { Container, Content, IconGroup, NavLink } from "./style";
 import dcIcon from "../../assets/images/discordIcon.png";
 import { Link } from "react-router-dom";
 
@@ -7,12 +7,12 @@ export const Footer = () => {
   return (
     <Container>
       <Content>
-        <Link className="footer-nav" to="/">
+        <NavLink to="#home">
           <div>Home</div>
-        </Link>
-        <div>Projects</div>
-        <div>Contact</div>
-        <div>About</div>
+        </NavLink>
+        <NavLink to="#projects">Projects</NavLink>
+        <NavLink to="#contact">Contact</NavLink>
+        <NavLink to="#about">About</NavLink>
         <IconGroup>
           <i className="devicon-github-original colored"></i>
 

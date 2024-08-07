@@ -13,7 +13,7 @@ import avatar from "../../assets/images/avatar.png";
 export const Header = () => {
   return (
     <>
-      <Container>
+      <Container id="home">
         <Title>
           Hi, I'm
           <MyName> Greg</MyName>
