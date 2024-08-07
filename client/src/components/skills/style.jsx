@@ -10,6 +10,7 @@ import {
 export const Container = styled(StyledComponentDiv)`
   margin: 0;
   padding: 1rem;
+  background-color: ${color.platinum};
 `;
 
 export const Content = styled(StyledComponentDiv)`
@@ -23,10 +24,10 @@ export const Content = styled(StyledComponentDiv)`
 `;
 export const ProjectCard = styled(StyledCard)``;
 export const Title = styled(SectionTitle)`
-  color: white;
+  color: ${color.oxfordblue};
+  padding: 2rem;
   ${media.sm`
-  padding-bottom: 1rem;
-    
+  padding-bottom: 0.5rem;
   
-  `}
+  `};
 `;

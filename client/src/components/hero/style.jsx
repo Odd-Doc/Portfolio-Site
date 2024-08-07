@@ -80,9 +80,10 @@ export const Content = styled.h3`
   animation: ${slideInLeft} 1s, ${fadeIn} 1s linear;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* display: flex; */
+  text-align: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
   p {
     font-size: 0.6em;
   }

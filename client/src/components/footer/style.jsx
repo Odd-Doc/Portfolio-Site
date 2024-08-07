@@ -8,13 +8,13 @@ import {
 } from "../styles";
 
 export const Container = styled(StyledComponentDiv)`
-  background-color: ${color.platinum};
+  background-color: ${color.oxfordblue};
 `;
 
 export const Content = styled.div`
   display: flex;
   gap: 2rem;
-  color: black;
+  color: white;
   font-size: 1.1em;
   padding: 2rem;
   justify-content: space-between;
@@ -26,7 +26,7 @@ export const Content = styled.div`
 
   .footer-nav {
     text-decoration: none;
-    color: black;
+    color: white;
   }
 `;
 export const IconGroup = styled.div`

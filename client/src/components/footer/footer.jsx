@@ -1,6 +1,6 @@
 import { SectionTitle } from "../styles";
 import { Container, Content, IconGroup, NavLink } from "./style";
-import dcIcon from "../../assets/images/discordIcon.png";
+import dcIcon from "../../assets/images/discord-mark-white.png";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
@@ -14,8 +14,7 @@ export const Footer = () => {
         <NavLink to="#contact">Contact</NavLink>
         <NavLink to="#about">About</NavLink>
         <IconGroup>
-          <i className="devicon-github-original colored"></i>
-
+          <i className="devicon-github-original"></i>
           <i className="devicon-linkedin-plain"></i>
           <img src={dcIcon} />
         </IconGroup>
