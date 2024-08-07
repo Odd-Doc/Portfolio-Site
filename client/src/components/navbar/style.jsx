@@ -18,7 +18,12 @@ export const Bar = styled.nav`
   align-items: center;
   padding: 1rem;
   background-color: ${color.platinum};
+  ${media.sm`
+    position: fixed;
 
+    width:100%;
+    
+  `}
   a {
     text-decoration: none;
     color: black;
@@ -96,9 +101,11 @@ export const BurgerBar = styled.span`
 export const Burger = styled.div`
   display: none;
   height: 100%;
+  padding-right: 2rem;
   ${media.sm`
     display: block;
     cursor: pointer;
+    
    & ${BurgerBar}:nth-child(2) {
         opacity: ${(props) => (props.theme.active ? "0" : "100%")};
 

@@ -67,25 +67,7 @@ export const StyledComponentDiv = styled.div`
   font-family: "Montserrat", sans-serif;
   padding: 1rem;
   font-size: 1.25em;
-  .project-card {
-    transform: ${(props) =>
-      props.theme.view ? "translateX(0%)" : "translateX(200%)"};
-    transition: 1s;
-    .project-title-wrapper {
-      position: fixed;
-      transform: ${(props) =>
-        props.theme.view ? "translateX(-15%)" : "translateX(-500%)"};
-      border-radius: 5px;
-      transition: 2s;
-      padding: 2rem;
-      bottom: -10px;
-      background-color: ${colorScheme_main.oxfordblueTransparent};
-      ${media.sm`
-      font-size: 0.9em;
-      padding:1rem;
-  `}
-    }
-  }
+
   ${media.sm`
     font-size: 1em;
   

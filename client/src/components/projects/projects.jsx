@@ -8,8 +8,6 @@ import { ThemeProvider } from "styled-components";
 export const Projects = () => {
   const { ref, inView, entry } = useInView();
 
-  const [isVisible, setIsVisible] = useState();
-  const projectRef = useRef();
   const theme = {
     view: inView,
   };
