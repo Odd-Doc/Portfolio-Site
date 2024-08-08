@@ -1,26 +1,34 @@
 import { SectionTitle, ProgressBar } from "../styles";
-import { Container, Content, Title } from "./style";
-
+import { Container, Content, Icon, Title } from "./style";
+import { Children } from "react";
+import { useInView } from "react-intersection-observer";
+import { ThemeProvider } from "styled-components";
 export const Skills = () => {
+  const { ref, inView } = useInView({ triggerOnce: true });
+  const theme = {
+    inView: inView,
+  };
+  Children.forEach();
   return (
-    <Container>
-      <Title>
-        <h3>My Toolbelt</h3>
-        <ProgressBar></ProgressBar>
-      </Title>
-      <Content>
-        <i className="devicon-mongodb-plain colored"></i>
-        <i className="devicon-express-original colored"></i>
-        <i className="devicon-react-original colored"></i>
-        <i className="devicon-nodejs-plain colored"></i>
-        <i className="devicon-mongoose-original colored"></i>
-        <i className="devicon-javascript-plain colored"></i>
-        <i className="devicon-html5-plain colored"></i>
-        <i className="devicon-css3-plain colored"></i>
-        <i className="devicon-unity-plain colored"></i>
-        <i className="devicon-blender-original colored"></i>
-        <i className="devicon-csharp-plain colored"></i>
-      </Content>
-    </Container>
+    <ThemeProvider theme={theme}>
+      <Container>
+        <Title>
+          <h3>My Toolbelt</h3>
+        </Title>
+        <Content ref={ref}>
+          <Icon id="0" className="devicon-mongodb-plain colored"></Icon>
+          <Icon id="1" className="devicon-express-original colored"></Icon>
+          <Icon id="2" className="devicon-react-original colored"></Icon>
+          <Icon id="3" className="devicon-nodejs-plain colored"></Icon>
+          <Icon id="4" className="devicon-mongoose-original colored"></Icon>
+          <Icon id="5" className="devicon-javascript-plain colored"></Icon>
+          <Icon id="6" className="devicon-html5-plain colored"></Icon>
+          <Icon id="7" className="devicon-css3-plain colored"></Icon>
+          <Icon id="8" className="devicon-unity-plain colored"></Icon>
+          <Icon id="9" className="devicon-blender-original colored"></Icon>
+          <Icon id="10" className="devicon-csharp-plain colored"></Icon>
+        </Content>
+      </Container>
+    </ThemeProvider>
   );
 };

@@ -4,66 +4,52 @@ import { media } from "../styles";
 import {
   StyledComponentDiv,
   colorScheme_main as color,
-  StyledCard,
   ProjectImageCard,
   SectionTitle,
 } from "../styles";
 
 const slideInRight = keyframes`
- 0% {
+ from {
     transform: translateX(-100%)
   }
-  50%{
+  to{
     transform: translateX(0%)
 
   }
-  100% {
-    transform: translateX(0%)
-  }
+ 
 `;
-const slideInLeft = keyframes`
- 0% {
-    transform: translateX(100%)
-  }
-  50%{
-    transform: translateX(0%)
 
-  }
-  100% {
-    transform: translateX(0%)
-  }
-`;
-const slideRightStyle = css`
-  animation: ${slideInRight} 1s linear;
-`;
 export const Title = styled(SectionTitle)``;
 export const ProjectCard = styled(ProjectImageCard)`
   background-image: url(${bb});
-  @media (prefers-reduced-motion: no-preference) {
-    @supports (animation-timeline: scroll()) {
-      animation: ${(props) =>
-        props.theme.view
-          ? css`
-              ${slideInRight}
-            `
-          : ""};
-      animation-timeline: scroll();
-    }
-  }
+  animation: ${(props) =>
+    props.theme.inView
+      ? css`
+          ${slideInRight} 1s ease-in
+        `
+      : ""};
+  animation-fill-mode: both;
 
-  /* margin-bottom: 2rem; */
+  //scroll animation
+  /* @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      animation: ${slideInRight};
+      animation-timeline: view(block);
+      animation-range: cover 0% entry 100%;
+      view-timeline-inset: 45%;
+    }
+  } */
 `;
 
 export const Container = styled(StyledComponentDiv)`
   background-color: ${color.platinum};
-  ${ProjectCard} {
-    .project-title-wrapper {
-      background-color: ${color.oxfordblueTransparent};
-      ${media.sm`
+
+  .project-title-wrapper {
+    background-color: ${color.oxfordblueTransparent};
+    ${media.sm`
       font-size: 0.9em;
       padding:1rem;
-  `}
-    }
+      `}
   }
 `;
 

@@ -14,6 +14,7 @@ export const Container = styled.div`
 
 export const Bar = styled.nav`
   display: flex;
+  z-index: 1000;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;

@@ -150,3 +150,10 @@ export const ProjectImageCard = styled(Link)`
 export const PageWrapper = styled.div`
   background: ${colorScheme_main.oxfordblue};
 `;
+export const Button = styled.button`
+  border: none;
+  font-family: inherit;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1em;
+`;

@@ -1,26 +1,25 @@
-import { useState, useRef } from "react";
 import { useInView } from "react-intersection-observer";
-
 import { ProgressBar } from "../styles";
 import { Container, Content, Title, Avatar, AvatarContainer } from "./style";
 import avatar from "../../assets/images/avatar.png";
 import { ThemeProvider } from "styled-components";
+
 export const About = () => {
-  const { ref, inView, entry } = useInView();
+  const { ref, inView, entry } = useInView({ triggerOnce: true });
 
   const theme = {
-    view: inView,
+    inView: inView,
   };
   return (
     <ThemeProvider theme={theme}>
-      <Container ref={ref} id="about">
-        <Title>
+      <Container id="about">
+        <Title ref={ref}>
           <h3>About Me</h3>
-          <ProgressBar></ProgressBar>
+          {/* <ProgressBar></ProgressBar> */}
         </Title>
-        <Avatar>
-          <img src={avatar} />
-        </Avatar>
+        <AvatarContainer>
+          <Avatar></Avatar>
+        </AvatarContainer>
 
         <Content>
           I’m passionate about building things, whether it’s a physical project

@@ -3,24 +3,21 @@ import {
   StyledComponentDiv,
   colorScheme_main as color,
   SectionTitle,
+  ProjectImageCard,
 } from "../styles";
+import avatar from "../../assets/images/avatar.png";
 
 const slideInLeft = keyframes`
- 0% {
+ from {
     transform: translateX(100%)
+    
   }
-  50%{
+  to{
     transform: translateX(0%)
-
-  }
-  100% {
-    transform: translateX(0%)
+    
   }
 `;
-export const Container = styled(StyledComponentDiv)`
-  margin: 0;
-  padding: 1rem;
-`;
+export const Container = styled(StyledComponentDiv)``;
 export const Content = styled(StyledComponentDiv)`
   text-align: center;
   padding-left: 4rem;
@@ -31,19 +28,30 @@ export const Title = styled(SectionTitle)`
 `;
 export const AvatarContainer = styled.div``;
 export const Avatar = styled.div`
-  img {
-    border: 4px solid;
-    border-radius: 50%;
-    @media (prefers-reduced-motion: no-preference) {
-      @supports (animation-timeline: scroll()) {
-        animation: ${(props) =>
-          props.theme.view
-            ? css`
-                ${slideInLeft};
-              `
-            : ""};
-        animation-timeline: scroll();
-      }
+  background-image: url(${avatar});
+  /* display: flex; */
+
+  border: 4px solid;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  animation: ${(props) =>
+    props.theme.inView
+      ? css`
+          ${slideInLeft} 1s ease-in
+        `
+      : ""};
+  animation-fill-mode: both;
+
+  //scrolling animation
+  /* @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      animation: ${slideInLeft};
+      animation-timeline: view(block);
+      animation-range: cover 0% entry 200%;
+      view-timeline-inset: 50%;
     }
-  }
+  } */
 `;

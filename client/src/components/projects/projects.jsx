@@ -1,24 +1,21 @@
-import { Link, Outlet } from "react-router-dom";
-import { ProgressBar, ProjectImageCard, SectionTitle } from "../styles";
+import { SectionTitle } from "../styles";
 import { Container, ProjectCard } from "./style";
-import bb from "../../assets/images/bb-mainmenu.png";
-import { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { ThemeProvider } from "styled-components";
 export const Projects = () => {
-  const { ref, inView, entry } = useInView();
+  const { ref, inView, entry } = useInView({ triggerOnce: true });
 
   const theme = {
-    view: inView,
+    inView: inView,
   };
   return (
     <ThemeProvider theme={theme}>
-      <Container ref={ref} id="projects">
-        <SectionTitle>
+      <Container id="projects">
+        <SectionTitle ref={ref}>
           <h3>Projects</h3>
         </SectionTitle>
 
-        <ProjectCard className="project-card" to="/projects/backflowbuddy">
+        <ProjectCard to="/projects/backflowbuddy">
           <div className="project-title-wrapper">
             <div className="project-title">
               Backflow Device Testing Simulator

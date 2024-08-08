@@ -4,7 +4,7 @@ import Home from "./pages/home/home";
 import "./App.css";
 import ScrollToTop from "./components/utils/ScrollToTop";
 import { BackflowBuddy } from "./pages/projects/BackflowBuddy/BackflowBuddy.page";
-// import { FontStyles } from "./components/styles";
+import { ContactMePage } from "./pages/ContactMe/ContactMe.page";
 function App() {
   return (
     <>
@@ -13,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects/backflowbuddy" element={<BackflowBuddy />} />
+          <Route path="/get-in-touch" element={<ContactMePage />} />
         </Routes>
       </BrowserRouter>
     </>
