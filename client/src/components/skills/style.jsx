@@ -2,7 +2,6 @@ import styled, { keyframes, css } from "styled-components";
 import {
   StyledComponentDiv,
   colorScheme_main as color,
-  StyledCard,
   SectionTitle,
   media,
 } from "../styles";
@@ -44,7 +43,6 @@ export const Content = styled(StyledComponentDiv)`
   justify-content: center;
   gap: 1rem;
 `;
-export const ProjectCard = styled(StyledCard)``;
 
 export const Title = styled(SectionTitle)`
   color: ${color.oxfordblue};

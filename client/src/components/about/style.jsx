@@ -22,21 +22,25 @@ export const Content = styled(StyledComponentDiv)`
   text-align: center;
   padding-left: 4rem;
   padding-right: 4rem;
+  color: ${color.platinum};
 `;
 export const Title = styled(SectionTitle)`
-  color: white;
+  color: ${color.platinum};
 `;
-export const AvatarContainer = styled.div``;
+export const AvatarContainer = styled.div`
+  padding-bottom: 5rem;
+`;
 export const Avatar = styled.div`
   background-image: url(${avatar});
   display: flex;
 
-  border: 4px solid;
+  border: 4px solid ${color.platinum};
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
   width: 200px;
   height: 200px;
+
   animation: ${(props) =>
     props.theme.inView
       ? css`

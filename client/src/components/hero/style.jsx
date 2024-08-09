@@ -1,7 +1,7 @@
 import { styled, keyframes } from "styled-components";
 import avatar from "../../assets/images/avatar.png";
 
-import { media, colorScheme_main as color, StyledCard } from "../styles";
+import { media, colorScheme_main as color } from "../styles";
 
 const fadeIn = keyframes`
  0% {

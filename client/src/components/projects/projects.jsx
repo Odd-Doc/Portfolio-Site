@@ -1,5 +1,5 @@
 import { SectionTitle } from "../styles";
-import { Container, ProjectCard } from "./style";
+import { Container, ProjectCard, ProjectSynopsis } from "./style";
 import { useInView } from "react-intersection-observer";
 import { ThemeProvider } from "styled-components";
 export const Projects = () => {
@@ -16,7 +16,7 @@ export const Projects = () => {
         </SectionTitle>
 
         <ProjectCard to="/projects/backflowbuddy">
-          <div className="project-title-wrapper">
+          <ProjectSynopsis>
             <div className="project-title">
               Backflow Device Testing Simulator
             </div>
@@ -24,7 +24,7 @@ export const Projects = () => {
               interactive tool designed to help users prepare for state
               licensing exams.
             </div>
-          </div>
+          </ProjectSynopsis>
         </ProjectCard>
       </Container>
     </ThemeProvider>

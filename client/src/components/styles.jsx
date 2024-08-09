@@ -63,10 +63,9 @@ const reveal = keyframes`
 `;
 
 export const StyledComponentDiv = styled.div`
-  color: white;
+  font-size: 1.35em;
   font-family: "Montserrat", sans-serif;
-  padding: 1rem;
-  font-size: 1.25em;
+  padding-bottom: 100px;
 
   ${media.sm`
     font-size: 1em;
@@ -75,12 +74,9 @@ export const StyledComponentDiv = styled.div`
 `;
 
 export const SectionTitle = styled.div`
-  /* top: 0;
-  position: sticky; */
-  color: ${colorScheme_main.oxfordblue};
-  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
-  padding-bottom: 2rem;
 `;
 
 const growProgress = keyframes`
@@ -122,15 +118,9 @@ export const ProgressBar = styled.div`
   } */
 `;
 
-export const StyledCard = styled.div`
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 200px;
-  padding-bottom: 200px;
-`;
 export const ProjectImageCard = styled(Link)`
-  border-radius: 4px;
-  width: 60%;
+  border-radius: 8px;
+  width: 45%;
   margin-left: auto;
   margin-right: auto;
   height: 550px;
@@ -144,6 +134,7 @@ export const ProjectImageCard = styled(Link)`
 
   ${media.sm`
   height: 250px;
+  width:250px;
   background-position:center;
   `}
 `;

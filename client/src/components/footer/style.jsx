@@ -9,7 +9,19 @@ import {
 
 export const Container = styled(StyledComponentDiv)`
   position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   background-color: ${color.oxfordblue};
+  ${media.sm`
+    
+    flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+        `}
 `;
 
 export const Content = styled.div`
@@ -18,7 +30,6 @@ export const Content = styled.div`
   color: white;
   font-size: 1.1em;
 
-  padding: 2rem;
   justify-content: space-between;
   ${media.sm`
     
