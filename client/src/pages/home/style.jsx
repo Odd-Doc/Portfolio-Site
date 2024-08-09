@@ -5,4 +5,6 @@ import {
   PageWrapper,
 } from "../../components/styles";
 
-export const Container = styled(PageWrapper)``;
+export const Container = styled(PageWrapper)`
+  overflow: hidden;
+`;

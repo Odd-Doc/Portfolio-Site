@@ -14,16 +14,16 @@ export const Container = styled.div`
 
 export const Bar = styled.nav`
   display: flex;
-  z-index: 1000;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  z-index: 100;
+  overflow: visible;
+
   background-color: ${color.platinum};
   ${media.sm`
-    position: fixed;
-
     width:100%;
-    
+    position: fixed;
   `}
   a {
     text-decoration: none;

@@ -29,7 +29,7 @@ export const Title = styled(SectionTitle)`
 export const AvatarContainer = styled.div``;
 export const Avatar = styled.div`
   background-image: url(${avatar});
-  /* display: flex; */
+  display: flex;
 
   border: 4px solid;
   border-radius: 50%;
@@ -40,7 +40,7 @@ export const Avatar = styled.div`
   animation: ${(props) =>
     props.theme.inView
       ? css`
-          ${slideInLeft} 1s ease-in
+          ${slideInLeft} 1s ease-in;
         `
       : ""};
   animation-fill-mode: both;

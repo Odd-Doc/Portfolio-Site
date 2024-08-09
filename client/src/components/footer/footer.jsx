@@ -1,7 +1,8 @@
 import { SectionTitle } from "../styles";
-import { Container, Content, IconGroup, NavLink } from "./style";
+import { Container, Content, IconGroup, NavLink, IdeaImage } from "./style";
 import dcIcon from "../../assets/images/discord-mark-white.png";
 import { Link } from "react-router-dom";
+import ideaImg from "../../assets/images/flat-creativity-concept-illustration.png";
 
 export const Footer = () => {
   const scrollTo = (el) => {
@@ -11,27 +12,29 @@ export const Footer = () => {
   };
 
   return (
-    <Container>
-      <Content>
-        <NavLink to="#home" scroll={scrollTo}>
-          <div>Home</div>
-        </NavLink>
-        <NavLink to="#projects" scroll={scrollTo}>
-          Projects
-        </NavLink>
-        <NavLink to="#about" scroll={scrollTo}>
-          About
-        </NavLink>
-        <NavLink to="#contact" scroll={scrollTo}>
-          Contact
-        </NavLink>
+    <>
+      <Container>
+        <Content>
+          <NavLink to="#home" scroll={scrollTo}>
+            <div>Home</div>
+          </NavLink>
+          <NavLink to="#projects" scroll={scrollTo}>
+            Projects
+          </NavLink>
+          <NavLink to="#about" scroll={scrollTo}>
+            About
+          </NavLink>
+          <NavLink to="#contact" scroll={scrollTo}>
+            Contact
+          </NavLink>
 
-        <IconGroup>
-          <i className="devicon-github-original"></i>
-          <i className="devicon-linkedin-plain"></i>
-          <img src={dcIcon} />
-        </IconGroup>
-      </Content>
-    </Container>
+          <IconGroup>
+            <i className="devicon-github-original"></i>
+            <i className="devicon-linkedin-plain"></i>
+            <img src={dcIcon} />
+          </IconGroup>
+        </Content>
+      </Container>
+    </>
   );
 };

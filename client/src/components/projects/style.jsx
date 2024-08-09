@@ -25,7 +25,7 @@ export const ProjectCard = styled(ProjectImageCard)`
   animation: ${(props) =>
     props.theme.inView
       ? css`
-          ${slideInRight} 1s ease-in
+          ${slideInRight} 1s ease-in;
         `
       : ""};
   animation-fill-mode: both;
