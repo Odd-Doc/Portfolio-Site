@@ -24,9 +24,9 @@ export const Footer = () => {
           <NavLink to="#about" scroll={scrollTo}>
             About
           </NavLink>
-          <NavLink to="#contact" scroll={scrollTo}>
+          {/* <NavLink to="#contact" scroll={scrollTo}>
             Contact
-          </NavLink>
+          </NavLink> */}
 
           <IconGroup>
             <i className="devicon-github-original"></i>
