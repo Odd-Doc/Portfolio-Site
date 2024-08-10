@@ -15,6 +15,10 @@ export const Container = styled(StyledComponentDiv)`
     text-decoration: none;
     color: ${(props) => props.theme.colors.oxfordblue};
     align-self: center;
+    margin-bottom: 27px;
+    span {
+      margin-bottom: 2rem;
+    }
   }
 `;
 export const Header = styled.div`
@@ -27,7 +31,9 @@ export const Header = styled.div`
   align-content: center;
   text-align: center;
   height: 100vh;
+  color: ${(props) => props.theme.colors.platinum};
   background-color: ${(props) => props.theme.colors.oxfordblue};
+  padding: 2rem;
 `;
 
 export const Content = styled(StyledComponentDiv)`
@@ -91,7 +97,7 @@ export const StackingCard = styled.li`
     }
   }
   ${media.sm`
-    top: 100px
+    top: 50px
   `}
 
   img {
