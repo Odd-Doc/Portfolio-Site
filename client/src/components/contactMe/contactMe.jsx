@@ -1,6 +1,5 @@
 import { ContactMeLink, Container, IdeaImage } from "./style";
 import { Link } from "react-router-dom";
-import ideaImg from "../../assets/images/flat-creativity-concept-illustration.png";
 
 export const ContactMe = () => {
   return (

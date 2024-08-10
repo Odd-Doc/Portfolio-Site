@@ -1,14 +1,7 @@
 import { Link } from "react-router-dom";
 import styled, { css, keyframes, createGlobalStyle } from "styled-components";
 
-export const colorScheme_main = {
-  black: "#000000ff",
-  oxfordblue: "#14213dff",
-  oxfordblueTransparent: "#14213dd7",
-  orangeweb: "#fca311ff",
-  platinum: "#e5e5e5ff",
-  white: "#ffffffff",
-};
+export const colorScheme_main = {};
 
 const device = {
   xs: "400px",

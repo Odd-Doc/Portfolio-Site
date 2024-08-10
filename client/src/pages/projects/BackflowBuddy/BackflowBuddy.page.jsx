@@ -5,6 +5,8 @@ import {
   Header,
   ImagesGroup,
   NewTabLink,
+  StackingCard,
+  StackingDeck,
 } from "./style";
 
 import bb1 from "../../../assets/images/bb-mainmenu.png";
@@ -13,6 +15,21 @@ import bb3 from "../../../assets/images/bb-rp2.png";
 import bb4 from "../../../assets/images/bb-quiz.png";
 import { Footer } from "../../../components/footer/footer";
 
+const ImagePool = [bb1, bb2, bb3, bb4];
+const Deck = ({ cards }) => {
+  return (
+    <>
+      {cards.map((card) => {
+        return (
+          <StackingCard key={card.id}>
+            <img src={card.source} />
+          </StackingCard>
+        );
+      })}
+    </>
+  );
+};
+
 export const BackflowBuddy = () => {
   return (
     <Container>
@@ -20,12 +37,23 @@ export const BackflowBuddy = () => {
         <h1>Backflow Buddy</h1>
         <p>Backflow Assembly Simulator And Licensing Exam Prep</p>
       </Header>
+      <StackingDeck>
+        <Deck
+          cards={[
+            { source: bb1, id: "b1" },
+            { source: bb2, id: "b2" },
+            { source: bb3, id: "b3" },
+            { source: bb4, id: "bb4" },
+          ]}
+        />
+      </StackingDeck>
+
       <Content>
         <p>A labor of love.</p>
         This was my first personal project that I ever published. The idea for
-        this app came was the very reason I set out on this journey learning to
-        code, back in 2021. Having a full time job (and two kids born along the
-        way), meant going at it at night and weekends. <p></p>
+        this app was the very reason I set out on this journey learning to code,
+        back in 2021. Having a full time job (and two kids born along the way),
+        meant going at it at night and weekends. <p></p>
         Having no idea where to start, I began working my way down the
         FreeCodeCamp curriculum. After completing most of the curriculum by May
         of 2022, I realised that this type of app could not be created using web
@@ -47,12 +75,6 @@ export const BackflowBuddy = () => {
         </NewTabLink>
       </a>
 
-      <ImagesGroup>
-        <img src={bb1} />
-        <img src={bb2} />
-        <img src={bb3} />
-        <img src={bb4} />
-      </ImagesGroup>
       <Footer />
     </Container>
   );

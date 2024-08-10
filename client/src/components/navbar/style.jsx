@@ -1,9 +1,5 @@
 import styled from "styled-components";
-import {
-  StyledComponentDiv,
-  media,
-  colorScheme_main as color,
-} from "../styles";
+import { StyledComponentDiv, media } from "../styles";
 // import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -19,8 +15,7 @@ export const Bar = styled.nav`
   padding: 1rem;
   z-index: 100;
   overflow: visible;
-
-  background-color: ${color.platinum};
+  background-color: ${(props) => props.theme.colors.oxfordblue};
   ${media.sm`
     width:100%;
     position: fixed;

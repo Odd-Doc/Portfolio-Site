@@ -7,13 +7,13 @@ import {
   media,
 } from "../styles";
 
-export const Container = styled(StyledComponentDiv)`
+export const Container = styled.div`
   position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  background-color: ${color.oxfordblue};
+  background-color: ${(props) => props.theme.colors.oxfordblue};
   ${media.sm`
     
     flex-direction: column;
