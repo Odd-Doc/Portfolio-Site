@@ -53,21 +53,21 @@ export const BackflowBuddy = () => {
         This was my first personal project that I ever published. The idea for
         this app was the very reason I set out on this journey learning to code,
         back in 2021. Having a full time job (and two kids born along the way),
-        meant going at it at night and weekends. <p></p>
+        meant digging deep every night and every weekend. <p></p>
         Having no idea where to start, I began working my way down the
         FreeCodeCamp curriculum. After completing most of the curriculum by May
-        of 2022, I realised that this type of app could not be created using web
+        of 2022, I realized that this type of app could not be created using web
         tech, at least not at that time. I switched gears and dove head first
         into Unity and C#. My goal was to solo the entire project, from soup to
         nuts. I created each and every asset from scratch, except the water -
         see Zibra Liquids. It took me a little over 2 years to learn Unity, C#,
-        Blender (3D modeling, topology, textures, shaders etc.) and push though
+        Blender (3D modeling, topology, textures, shaders etc.) and push through
         all of the post build production hurdles to eventually self publish this
         application.
       </Content>
       <a
         className="visit-app-store"
-        href="https://apps.apple.com/us/app/backflow-buddy"
+        href="https://apps.apple.com/us/app/backflow-buddy/id6475203858"
       >
         <NewTabLink className="material-symbols-outlined">
           open_in_new
