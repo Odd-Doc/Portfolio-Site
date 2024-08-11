@@ -4,12 +4,13 @@ import {
   StyledComponentDiv,
   media,
   colorScheme_main as color,
-  PageWrapper,
 } from "../../../components/styles";
+import { Bar } from "../../../components/navbar/style";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export const Container = styled(StyledComponentDiv)`
   display: block;
-
   margin: 0 auto;
   background-color: ${(props) => props.theme.colors.platinum};
   padding-bottom: 0;
@@ -17,10 +18,9 @@ export const Container = styled(StyledComponentDiv)`
   .visit-app-store {
     text-decoration: none;
     color: ${(props) => props.theme.colors.oxfordblue};
-
-    margin-bottom: 27px;
     span {
-      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
     }
   }
 `;
@@ -114,5 +114,26 @@ export const StackingCard = styled.li`
     width: 100vw;
     ${media.sm`
     `}
+  }
+`;
+export const Navbar = styled(Bar)``;
+export const FooterLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`;
+export const BackToTop = styled.div`
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: ${(props) => props.theme.colors.platinum};
+  padding-bottom: 2rem;
+  & a {
+    display: block;
+    padding: 1rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: ${(props) => props.theme.colors.platinum};
+    background-color: ${(props) => props.theme.colors.oxfordblue};
   }
 `;

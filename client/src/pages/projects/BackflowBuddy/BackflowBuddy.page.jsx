@@ -7,6 +7,8 @@ import {
   StackingCard,
   StackingDeck,
   Main,
+  FooterLink,
+  BackToTop,
 } from "./style";
 
 import bb1 from "../../../assets/images/bb-mainmenu.png";
@@ -14,8 +16,10 @@ import bb2 from "../../../assets/images/bb-rp1.png";
 import bb3 from "../../../assets/images/bb-rp2.png";
 import bb4 from "../../../assets/images/bb-quiz.png";
 import bbIcon from "../../../assets/images/bb-icon.png";
-import { Footer } from "../../../components/footer/footer";
-
+import { Navbar } from "./style";
+import { Logo } from "../../../components/navbar/style";
+import { HashLink } from "react-router-hash-link";
+import { scrollTo } from "../../../components/footer/footer";
 const ImagePool = [bb1, bb2, bb3, bb4];
 const Deck = ({ cards }) => {
   return (
@@ -33,7 +37,10 @@ const Deck = ({ cards }) => {
 
 export const BackflowBuddy = () => {
   return (
-    <Container>
+    <Container id="#top">
+      <Navbar>
+        <Logo to="/">GP_</Logo>
+      </Navbar>
       <Header>
         <img className="bb-icon" src={bbIcon} />
         <h1>Backflow Buddy 🚰 🔧</h1>
@@ -78,7 +85,11 @@ export const BackflowBuddy = () => {
           <AnchorText className="app-link">View on the App Store</AnchorText>
         </NewTabLink>
       </a>
-      <Footer />
+      <BackToTop>
+        <HashLink to="#top" scroll={scrollTo}>
+          Back to top
+        </HashLink>
+      </BackToTop>
     </Container>
   );
 };

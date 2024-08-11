@@ -3,13 +3,12 @@ import { Container, Content, IconGroup, NavLink, IdeaImage } from "./style";
 import dcIcon from "../../assets/images/discord-mark-white.png";
 import { Link } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-
+export const scrollTo = (el) => {
+  const yOffset = -20; // Adjust the offset to your liking
+  const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
+  window.scrollTo({ top: y, behavior: "smooth" });
+};
 export const Footer = () => {
-  const scrollTo = (el) => {
-    const yOffset = -20; // Adjust the offset to your liking
-    const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
-    window.scrollTo({ top: y, behavior: "smooth" });
-  };
   return (
     <>
       <Container>
