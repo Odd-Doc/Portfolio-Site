@@ -9,21 +9,21 @@ import {
 import { Link } from "react-router-dom";
 
 export const Container = styled(StyledComponentDiv)`
-  background-color: ${color.platinum};
+  /* background-color: ${color.platinum}; */
   /* text-align: center; */
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   align-items: center;
   hr {
     height: 2px;
     width: 75%;
     border: none;
-    background-color: ${color.orangeweb};
-    margin-top: 100px;
+    background-color: ${(props) => props.theme.colors.orangeweb};
+    margin-top: 80px;
   }
   .have-an-idea {
-    padding-bottom: 20px;
-    padding-top: 200px;
+    /* padding-bottom: 20px; */
     color: ${color.oxfordblue};
   }
 `;
