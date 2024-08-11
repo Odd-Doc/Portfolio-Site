@@ -14,6 +14,7 @@ export const Navbar = () => {
   const handleBurgerClick = () => {
     setIsActive(!isActive);
   };
+
   const theme = {
     active: isActive,
   };
@@ -30,12 +31,16 @@ export const Navbar = () => {
         <Logo to="#">GP_</Logo>
         <NavbarMenu $isActive={isActive}>
           <NavbarItem>
-            <NavLink to="#projects" scroll={scrollTo}>
+            <NavLink
+              to="#projects"
+              scroll={scrollTo}
+              onClick={handleBurgerClick}
+            >
               Projects
             </NavLink>
           </NavbarItem>
           <NavbarItem>
-            <NavLink to="#about" scroll={scrollTo}>
+            <NavLink to="#about" scroll={scrollTo} onClick={handleBurgerClick}>
               About
             </NavLink>
           </NavbarItem>
