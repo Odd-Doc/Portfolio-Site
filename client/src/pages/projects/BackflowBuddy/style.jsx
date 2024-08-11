@@ -33,6 +33,7 @@ export const Header = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  align-content: center;
   text-align: center;
   height: 100vh;
   color: ${(props) => props.theme.colors.platinum};
