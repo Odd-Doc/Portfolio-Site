@@ -49,6 +49,10 @@ export const IconGroup = styled.div`
   img {
     height: 16px;
   }
+  a {
+    text-decoration: none;
+    color: ${(props) => props.theme.colors.platinum};
+  }
 `;
 export const NavLink = styled(HashLink)`
   text-decoration: none;

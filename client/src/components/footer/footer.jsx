@@ -28,9 +28,15 @@ export const Footer = () => {
           </NavLink> */}
 
           <IconGroup>
-            <i className="devicon-github-original"></i>
-            <i className="devicon-linkedin-plain"></i>
-            <img src={dcIcon} />
+            <a href="https://github.com/Odd-Doc">
+              <i className="devicon-github-original"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/greg-phillips-91b79020b/">
+              <i className="devicon-linkedin-plain"></i>
+            </a>
+            <a href="https://discordapp.com/users/odd.doc">
+              <img src={dcIcon} />
+            </a>
           </IconGroup>
         </Content>
       </Container>
