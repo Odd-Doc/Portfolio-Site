@@ -34,7 +34,7 @@ export const NavbarMenu = styled.ul`
   ${media.sm`
         position: fixed;
         top: 3rem;
-        /* left:-100%;   */
+        
         left: ${(props) => (props.theme.active ? "0" : "-100%")};
         ${console.log((props) => props.theme.active)}
         flex-direction: column;

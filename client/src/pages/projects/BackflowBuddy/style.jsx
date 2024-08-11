@@ -35,17 +35,24 @@ export const Header = styled.div`
   text-align: center;
   height: 100vh;
   color: ${(props) => props.theme.colors.platinum};
-  background-color: ${(props) => props.theme.colors.oxfordblue};
+  background-color: ${(props) => props.theme.colors.oxfordblueTransparent};
   padding: 2rem;
+  .bb-icon {
+    border-radius: 24%;
+    width: 25%;
+    align-self: center;
+    margin-bottom: 2rem;
+  }
 `;
 
 export const Content = styled.div`
   p {
     font-style: italic;
   }
-  /* display: block; */
-  margin: 0 auto;
-  padding-bottom: 2rem;
+
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 `;
 export const AnchorText = styled.div`
   font-family: "Montserrat", sans-serif;
@@ -60,7 +67,7 @@ export const NewTabLink = styled.span`
 const scale = keyframes`
 	to {
 		transform:
-			scale(calc(1.1 - calc(0.1 * 4)));
+			scale(calc(1.25 - calc(0.1 * 4)));
 	}
 `;
 export const Main = styled.div`
@@ -82,7 +89,6 @@ export const StackingCard = styled.li`
   transform-origin: center;
   list-style: none;
   display: flex;
-  /* padding-top: 100px; */
   overflow: hidden;
   justify-content: center;
   border-radius: 12px;
@@ -99,9 +105,8 @@ export const StackingCard = styled.li`
   `}
 
   img {
-    width: 80vw;
+    width: 100vw;
     ${media.sm`
-      width:90vw;
     `}
   }
 `;

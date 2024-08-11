@@ -63,16 +63,16 @@ export const ProjectCard = styled(ProjectImageCard)`
 `;
 
 export const Container = styled(StyledComponentDiv)`
-  background-color: ${color.platinum};
+  background-color: ${(props) => props.theme.colors.platinum};
 `;
 export const ProjectSynopsis = styled.div`
   position: relative;
-  background-color: ${color.oxfordblueTransparent};
   opacity: 0;
   padding: 2rem;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: ${color.platinum};
+  color: ${(props) => props.theme.colors.platinum};
+  background-color: ${(props) => props.theme.colors.oxfordblueTransparent};
 
   ${ProjectCard}:hover & {
     display: block;
