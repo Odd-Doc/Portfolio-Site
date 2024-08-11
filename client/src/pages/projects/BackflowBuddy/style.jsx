@@ -39,9 +39,12 @@ export const Header = styled.div`
   padding: 2rem;
   .bb-icon {
     border-radius: 24%;
-    width: 25%;
+    width: 20%;
     align-self: center;
     margin-bottom: 2rem;
+    ${media.sm`
+      /* width:50%; */
+    `}
   }
 `;
 
