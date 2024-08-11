@@ -44,11 +44,11 @@ export const Navbar = () => {
               About
             </NavLink>
           </NavbarItem>
-          {/* <NavbarItem>
+          <NavbarItem>
             <NavLink to="#contact" scroll={scrollTo}>
               Contact
             </NavLink>
-          </NavbarItem> */}
+          </NavbarItem>
         </NavbarMenu>
         <div onClick={handleBurgerClick}>
           <Burger className="nav-burger">

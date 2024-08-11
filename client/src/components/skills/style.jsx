@@ -41,6 +41,7 @@ export const Content = styled(StyledComponentDiv)`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0;
   gap: 1rem;
 `;
 

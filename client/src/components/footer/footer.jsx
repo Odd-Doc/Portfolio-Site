@@ -23,9 +23,9 @@ export const Footer = () => {
           <NavLink to="#about" scroll={scrollTo}>
             About
           </NavLink>
-          {/* <NavLink to="#contact" scroll={scrollTo}>
+          <NavLink to="#contact" scroll={scrollTo}>
             Contact
-          </NavLink> */}
+          </NavLink>
 
           <IconGroup>
             <a href="https://github.com/Odd-Doc">
