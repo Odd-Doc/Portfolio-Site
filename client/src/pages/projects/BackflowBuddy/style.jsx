@@ -28,10 +28,11 @@ export const Header = styled.div`
   h1 {
     margin: 0;
   }
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  //position: relative; --> fixes issue with safari browsers not maintaining aspect ratio
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   text-align: center;
   height: 100vh;
   color: ${(props) => props.theme.colors.platinum};
@@ -39,11 +40,12 @@ export const Header = styled.div`
   padding: 2rem;
   .bb-icon {
     border-radius: 24%;
-    width: 20%;
+    width: 25%;
     align-self: center;
     margin-bottom: 2rem;
+
     ${media.sm`
-      /* width:50%; */
+      width:50%;
     `}
   }
 `;
