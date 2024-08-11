@@ -46,7 +46,7 @@ const moveArrow = keyframes`
 `;
 
 export const Container = styled.div`
-  color: white;
+  color: ${(props) => props.theme.colors.platinum};
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -55,7 +55,7 @@ export const Container = styled.div`
   font-size: 1.5em;
   align-items: center;
   flex-direction: column;
-
+  background-color: ${(props) => props.theme.colors.oxfordblue};
   ${media.sm`
     font-size: 1em;
   `}
@@ -71,7 +71,7 @@ export const MyName = styled.div`
   letter-spacing: 0.1em;
   //target specific character(s) and have white space compiled from jsx
   white-space: pre-wrap;
-  color: ${color.orangeweb};
+  color: ${(props) => props.theme.colors.orangeweb};
 `;
 export const BlinkingCaret = styled.div`
   animation: ${blinkingCaret} 0.75s ease-in-out infinite;

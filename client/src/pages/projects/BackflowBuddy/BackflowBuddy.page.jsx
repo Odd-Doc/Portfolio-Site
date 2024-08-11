@@ -3,10 +3,10 @@ import {
   Container,
   Content,
   Header,
-  ImagesGroup,
   NewTabLink,
   StackingCard,
   StackingDeck,
+  Main,
 } from "./style";
 
 import bb1 from "../../../assets/images/bb-mainmenu.png";
@@ -37,16 +37,18 @@ export const BackflowBuddy = () => {
         <h1>Backflow Buddy</h1>
         <p>Backflow Assembly Simulator And Licensing Exam Prep</p>
       </Header>
-      <StackingDeck>
-        <Deck
-          cards={[
-            { source: bb1, id: "b1" },
-            { source: bb2, id: "b2" },
-            { source: bb3, id: "b3" },
-            { source: bb4, id: "bb4" },
-          ]}
-        />
-      </StackingDeck>
+      <Main>
+        <StackingDeck>
+          <Deck
+            cards={[
+              { source: bb1, id: "b1" },
+              { source: bb2, id: "b2" },
+              { source: bb3, id: "b3" },
+              { source: bb4, id: "bb4" },
+            ]}
+          />
+        </StackingDeck>
+      </Main>
 
       <Content>
         <p>A labor of love.</p>
@@ -74,7 +76,6 @@ export const BackflowBuddy = () => {
           <AnchorText className="app-link">View on the App Store</AnchorText>
         </NewTabLink>
       </a>
-
       <Footer />
     </Container>
   );

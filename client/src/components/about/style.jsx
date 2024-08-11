@@ -17,7 +17,10 @@ const slideInLeft = keyframes`
     
   }
 `;
-export const Container = styled(StyledComponentDiv)``;
+export const Container = styled(StyledComponentDiv)`
+  background-color: ${(props) => props.theme.colors.oxfordblue};
+  color: ${(props) => props.theme.colors.platinum};
+`;
 export const Content = styled(StyledComponentDiv)`
   text-align: center;
   padding-left: 4rem;
@@ -34,7 +37,7 @@ export const Avatar = styled.div`
   background-image: url(${avatar});
   display: flex;
 
-  border: 4px solid ${color.platinum};
+  border: 4px solid ${(props) => props.theme.colors.platinum};
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;

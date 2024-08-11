@@ -15,14 +15,14 @@ export const Bar = styled.nav`
   padding: 1rem;
   z-index: 100;
   overflow: visible;
-  background-color: ${(props) => props.theme.colors.oxfordblue};
+  background-color: ${(props) => props.theme.colors.platinum};
   ${media.sm`
     width:100%;
     position: fixed;
   `}
   a {
     text-decoration: none;
-    color: black;
+    color: ${(props) => props.theme.colors.oxfordblue};
   }
 `;
 
@@ -36,8 +36,9 @@ export const NavbarMenu = styled.ul`
         top: 3rem;
         /* left:-100%;   */
         left: ${(props) => (props.theme.active ? "0" : "-100%")};
+        ${console.log((props) => props.theme.active)}
         flex-direction: column;
-        background-color: #fff;
+        background-color: ${(props) => props.theme.colors.platinum};
         width: 100%;
         border-radius: 2px;
         text-align: center;
