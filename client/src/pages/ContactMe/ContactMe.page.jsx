@@ -9,7 +9,7 @@ export const ContactMePage = () => {
         <Logo to="/">GP_</Logo>
       </Navbar>
       <Container>
-        <Form name="contact" netlify>
+        <form name="contact" netlify>
           <input placeholder="name*" type="text" name="name" required={true} />
           <input
             placeholder="email address*"
@@ -24,7 +24,7 @@ export const ContactMePage = () => {
             required={true}
           />
           <button type="submit">Submit</button>
-        </Form>
+        </form>
       </Container>
     </>
   );
