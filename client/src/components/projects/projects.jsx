@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import { SectionTitle } from "../styles";
-import { Container, ProjectCard, ProjectSynopsis } from "./style";
+import { Container, ProjectCard, ProjectSynopsis, LearnMore } from "./style";
 import { useInView } from "react-intersection-observer";
 import { ThemeProvider } from "styled-components";
 export const Projects = () => {
@@ -12,7 +13,7 @@ export const Projects = () => {
     <ThemeProvider theme={theme}>
       <Container id="projects">
         <SectionTitle ref={ref}>
-          <h3>Projects</h3>
+          <h3>Recent Projects</h3>
         </SectionTitle>
 
         <ProjectCard to="/projects/backflowbuddy">
@@ -26,6 +27,10 @@ export const Projects = () => {
             </div>
           </ProjectSynopsis>
         </ProjectCard>
+
+        <LearnMore>
+          <Link>Learn More</Link>
+        </LearnMore>
       </Container>
     </ThemeProvider>
   );

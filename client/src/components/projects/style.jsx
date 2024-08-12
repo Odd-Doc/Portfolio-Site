@@ -40,6 +40,18 @@ from {
 	}
  
 `;
+const reveal = keyframes`
+	from {
+		opacity: 0;
+    transform: translateY(100%)
+		
+	}
+	to {
+		opacity: 1;
+    transform: translateY(0%)
+		
+	}
+`;
 export const Title = styled(SectionTitle)``;
 export const ProjectCard = styled(ProjectImageCard)`
   background-image: url(${bb});
@@ -85,4 +97,31 @@ export const ProjectSynopsis = styled.div`
       padding:1rem;
       `}
 `;
+export const LearnMore = styled.div`
+  margin-top: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  a {
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: ${(props) => props.theme.colors.orangeweb};
+    color: ${(props) => props.theme.colors.oxfordblue};
+    text-align: center;
+    animation: ${(props) =>
+      props.theme.inView
+        ? css`
+            ${reveal} 1s ease-in;
+          `
+        : ""};
+    animation-fill-mode: both;
+
+    ${media.sm`
+      width: 100px;
+    `}
+  }
+`;
+
 export const ImageContainer = styled.div``;
