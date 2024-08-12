@@ -9,7 +9,7 @@ export const ContactMePage = () => {
         <Logo to="/">GP_</Logo>
       </Navbar>
       <Container>
-        <Form name="contact">
+        <Form name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
           <input placeholder="name*" type="text" name="name" required={true} />
           <input
