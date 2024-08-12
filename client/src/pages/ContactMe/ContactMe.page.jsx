@@ -9,7 +9,8 @@ export const ContactMePage = () => {
         <Logo to="/">GP_</Logo>
       </Navbar>
       <Container>
-        <Form name="contact" data-netlify="true">
+        <Form name="contact">
+          <input type="hidden" name="form-name" value="contact" />
           <input placeholder="name*" type="text" name="name" required={true} />
           <input
             placeholder="email address*"
