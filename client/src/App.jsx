@@ -7,6 +7,8 @@ import { BackflowBuddy } from "./pages/projects/BackflowBuddy/BackflowBuddy.page
 import { ContactMePage } from "./pages/ContactMe/ContactMe.page";
 import { ThemeProvider } from "styled-components";
 import theme from "./Theme";
+import { ContactSuccess } from "./pages/success/contactSuccess.page";
+
 function App() {
   return (
     <>
@@ -17,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects/backflowbuddy" element={<BackflowBuddy />} />
             <Route path="/get-in-touch" element={<ContactMePage />} />
+            <Route path="/contact-success" element={<ContactSuccess />} />
           </Routes>
         </ThemeProvider>
       </BrowserRouter>
