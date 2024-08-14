@@ -111,7 +111,7 @@ export const ProgressBar = styled.div`
   } */
 `;
 
-export const ProjectImageCard = styled(Link)`
+export const ProjectImageCard = styled.div`
   border-radius: 8px;
   width: 45%;
   margin-left: auto;

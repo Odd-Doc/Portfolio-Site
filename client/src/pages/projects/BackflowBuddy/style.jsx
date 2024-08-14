@@ -49,10 +49,14 @@ export const Header = styled.div`
   }
   a {
     text-decoration: none;
+    padding-top: 3rem;
     color: ${(props) => props.theme.colors.platinum};
   }
   i {
     padding-right: 1rem;
+  }
+  .app-store-badge {
+    padding-top: 2rem;
   }
 `;
 
@@ -96,8 +100,8 @@ export const StackingDeck = styled.ul`
 
 export const StackingCard = styled.li`
   position: sticky;
-  top: 10px;
   transform-origin: center;
+  top: 0;
   list-style: none;
   display: flex;
   overflow: hidden;
@@ -112,13 +116,16 @@ export const StackingCard = styled.li`
   }
   ${media.sm`
   
+  top: 50px;
     
   `}
 
   img {
     width: 100vw;
+    height: 90vh;
     ${media.sm`
-    `}
+      height:35vh;
+    `};
   }
 `;
 export const Navbar = styled(Bar)``;
@@ -133,6 +140,7 @@ export const BackToTop = styled.div`
   text-decoration: none;
   color: ${(props) => props.theme.colors.platinum};
   padding-bottom: 2rem;
+  padding-top: 2rem;
   & a {
     display: block;
     padding: 1rem;

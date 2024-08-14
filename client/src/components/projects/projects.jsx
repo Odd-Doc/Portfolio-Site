@@ -22,7 +22,7 @@ export const Projects = () => {
           <h3>Recent Projects</h3>
         </SectionTitle>
         <Project>
-          <ProjectCard to="/projects/backflowbuddy">
+          <ProjectCard>
             <ProjectSynopsis>
               <div className="project-title">
                 Backflow Device Testing Simulator
@@ -34,7 +34,7 @@ export const Projects = () => {
             </ProjectSynopsis>
           </ProjectCard>
 
-          <CallToAction>Learn More</CallToAction>
+          <CallToAction to="/projects/backflowbuddy">Learn More</CallToAction>
         </Project>
       </Container>
     </ThemeProvider>

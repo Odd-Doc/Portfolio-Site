@@ -16,6 +16,7 @@ import bb2 from "../../../assets/images/bb-rp1.png";
 import bb3 from "../../../assets/images/bb-rp2.png";
 import bb4 from "../../../assets/images/bb-quiz.png";
 import bbIcon from "../../../assets/images/bb-icon.png";
+import appStoreBadge from "../../../assets/images/dl-AppStore-white.svg";
 import { Navbar } from "./style";
 import { Logo } from "../../../components/navbar/style";
 import { HashLink } from "react-router-hash-link";
@@ -47,8 +48,23 @@ export const BackflowBuddy = () => {
         <h1>Backflow Buddy 🚰 🔧</h1>
         <p>Backflow Assembly Simulator And Licensing Exam Prep</p>
         <Link to="https://github.com/Odd-Doc/BackflowBuddy">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>View on GitHub
+          <i className="fa-solid fa-arrow-up-right-from-square"></i>View on
+          GitHub
         </Link>
+        {/* <a
+          className="visit-app-store"
+          href="https://apps.apple.com/us/app/backflow-buddy/id6475203858"
+        >
+          <NewTabLink className="material-symbols-outlined">
+            open_in_new
+            <AnchorText className="app-link">View on the App Store</AnchorText>
+          </NewTabLink>
+        </a> */}
+        <img
+          className="app-store-badge"
+          src={appStoreBadge}
+          alt="App Store Badge"
+        />
       </Header>
       <Main>
         <StackingDeck>
@@ -80,15 +96,7 @@ export const BackflowBuddy = () => {
         all of the post build production hurdles to eventually self publish this
         application.
       </Content>
-      <a
-        className="visit-app-store"
-        href="https://apps.apple.com/us/app/backflow-buddy/id6475203858"
-      >
-        <NewTabLink className="material-symbols-outlined">
-          open_in_new
-          <AnchorText className="app-link">View on the App Store</AnchorText>
-        </NewTabLink>
-      </a>
+
       <BackToTop>
         <HashLink to="#top" scroll={scrollTo}>
           Back to top
