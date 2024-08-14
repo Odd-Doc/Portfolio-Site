@@ -77,6 +77,9 @@ export const ProjectCard = styled(ProjectImageCard)`
 
 export const Container = styled(StyledComponentDiv)`
   background-color: ${(props) => props.theme.colors.platinum};
+  ${media.sm`
+    
+  `}
 `;
 export const ProjectSynopsis = styled.div`
   position: relative;
