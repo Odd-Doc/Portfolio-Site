@@ -13,14 +13,6 @@ export const Container = styled(StyledComponentDiv)`
   background-color: ${(props) => props.theme.colors.platinum};
   padding-bottom: 0;
   margin: 0 auto;
-  .visit-app-store {
-    text-decoration: none;
-    color: ${(props) => props.theme.colors.oxfordblue};
-    span {
-      padding-bottom: 2rem;
-      padding-top: 2rem;
-    }
-  }
 `;
 export const Header = styled.div`
   h1 {
@@ -49,14 +41,19 @@ export const Header = styled.div`
   }
   a {
     text-decoration: none;
-    padding-top: 3rem;
     color: ${(props) => props.theme.colors.platinum};
+    font-size: 0.9em;
   }
-  i {
-    padding-right: 1rem;
+  .git-hub-link--header {
+    margin-top: 1rem;
   }
   .app-store-badge {
-    padding-top: 2rem;
+    width: 140px;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  i {
+    padding-left: 0.5rem;
   }
 `;
 

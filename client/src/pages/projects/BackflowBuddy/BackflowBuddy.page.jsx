@@ -3,7 +3,6 @@ import {
   Container,
   Content,
   Header,
-  NewTabLink,
   StackingCard,
   StackingDeck,
   Main,
@@ -47,25 +46,18 @@ export const BackflowBuddy = () => {
         <img className="bb-icon" src={bbIcon} />
         <h1>Backflow Buddy 🚰 🔧</h1>
         <p>Backflow Assembly Simulator And Licensing Exam Prep</p>
-        <Link to="https://github.com/Odd-Doc/BackflowBuddy">
-          <i className="fa-solid fa-arrow-up-right-from-square"></i>View on
-          GitHub
-        </Link>
-        {/* <a
-          className="visit-app-store"
-          href="https://apps.apple.com/us/app/backflow-buddy/id6475203858"
+        <Link
+          className="git-hub-link--header"
+          to="https://github.com/Odd-Doc/BackflowBuddy"
         >
-          <NewTabLink className="material-symbols-outlined">
-            open_in_new
-            <AnchorText className="app-link">View on the App Store</AnchorText>
-          </NewTabLink>
-        </a> */}
-        <Link to="https://apps.apple.com/us/app/backflow-buddy/id6475203858">
-          <img
-            className="app-store-badge"
-            src={appStoreBadge}
-            alt="App Store Badge"
-          />
+          View on GitHub
+          <i className="fa-solid fa-arrow-up-right-from-square"></i>
+        </Link>
+        <Link
+          className="app-store-badge"
+          to="https://apps.apple.com/us/app/backflow-buddy/id6475203858"
+        >
+          <img src={appStoreBadge} alt="App Store Badge" />
         </Link>
       </Header>
       <Main>
