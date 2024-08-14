@@ -60,11 +60,13 @@ export const BackflowBuddy = () => {
             <AnchorText className="app-link">View on the App Store</AnchorText>
           </NewTabLink>
         </a> */}
-        <img
-          className="app-store-badge"
-          src={appStoreBadge}
-          alt="App Store Badge"
-        />
+        <Link to="https://apps.apple.com/us/app/backflow-buddy/id6475203858">
+          <img
+            className="app-store-badge"
+            src={appStoreBadge}
+            alt="App Store Badge"
+          />
+        </Link>
       </Header>
       <Main>
         <StackingDeck>
