@@ -67,8 +67,8 @@ export const StyledComponentDiv = styled.div`
 `;
 
 export const SectionTitle = styled.div`
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
 `;
 
