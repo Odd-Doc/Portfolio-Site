@@ -9,14 +9,26 @@ export const ContactMePage = () => {
         <Logo to="/">GP_</Logo>
       </Navbar>
       <Container>
-        <Form name="contact" method="post">
+        <Form name="contact" method="post" autoComplete="on">
           <input type="hidden" name="form-name" value="contact" />
-          <label>Name</label>
-          <input type="text" name="name" required={true} />
-          <label>Email</label>
-          <input type="email" name="email" required={true} />
-          <label>Message</label>
-          <textarea maxLength={500} name="message" required={true} />
+          <label for="firstName">Name</label>
+          <input
+            id="firstName"
+            type="text"
+            name="name"
+            required={true}
+            autoComplete="name"
+          />
+          <label for="givenEmail">Email</label>
+          <input
+            id="givenEmail"
+            type="email"
+            name="email"
+            required={true}
+            autoComplete="email"
+          />
+          <label for="msg">Message</label>
+          <textarea id="msg" maxLength={500} name="message" required={true} />
           <button type="submit">Submit</button>
         </Form>
       </Container>

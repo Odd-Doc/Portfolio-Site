@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Bar } from "../../components/navbar/style";
+import { media } from "../../components/styles";
 
 export const Container = styled.div`
   display: flex;
@@ -15,13 +16,14 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 90%;
+  width: 75%;
   input {
     height: 2.5rem;
     border: none;
     border-radius: 2px;
     font-size: 1.4rem;
     padding: 0.5rem;
+    background-color: ${(props) => props.theme.colors.platinum};
   }
   textarea {
     height: 7rem;
@@ -30,6 +32,7 @@ export const Form = styled.form`
     font-size: 1.4rem;
     padding: 0.5rem;
     resize: none;
+    background-color: ${(props) => props.theme.colors.platinum};
   }
   button {
     height: 3rem;
@@ -49,7 +52,11 @@ export const Form = styled.form`
   }
   label {
     color: ${(props) => props.theme.colors.platinum};
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.2em;
+    ${media.sm`
+    text-align: center;
+      
+    `}
   }
 `;

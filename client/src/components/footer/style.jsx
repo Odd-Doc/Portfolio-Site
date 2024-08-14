@@ -47,6 +47,10 @@ export const Content = styled.div`
     text-decoration: none;
     color: white;
   }
+  .cr {
+    font-size: 0.7em;
+    padding-top: 2rem;
+  }
 `;
 export const IconGroup = styled.div`
   /* padding-top: 1rem; */

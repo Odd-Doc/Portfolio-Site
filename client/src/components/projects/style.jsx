@@ -104,7 +104,7 @@ export const ProjectSynopsis = styled.div`
 
 export const CallToAction = styled(Link)`
   text-decoration: none;
-  padding: 2rem;
+  padding: 1rem;
   margin-top: 2rem;
   background-color: ${(props) => props.theme.colors.orangeweb};
   color: ${(props) => props.theme.colors.oxfordblue};

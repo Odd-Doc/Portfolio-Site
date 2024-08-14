@@ -37,6 +37,7 @@ export const Footer = () => {
               <img src={dcIcon} />
             </a>
           </IconGroup>
+          <p className="cr">Greg Phillips © Copyright 2024</p>
         </Content>
       </Container>
     </>

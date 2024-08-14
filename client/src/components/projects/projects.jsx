@@ -25,10 +25,10 @@ export const Projects = () => {
           <ProjectCard>
             <ProjectSynopsis>
               <div className="project-title">
-                Backflow Device Testing Simulator
+                Backflow Device Testing Simulator -
               </div>
               <div className="project-synop">
-                interactive tool designed to help users prepare for state
+                Interactive tool designed to help users prepare for state
                 licensing exams.
               </div>
             </ProjectSynopsis>
