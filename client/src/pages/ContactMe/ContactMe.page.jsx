@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container, Form, Navbar } from "./style";
 import { Logo } from "../../components/navbar/style";
-
+import { useNavigate } from "react-router-dom";
 export const ContactMePage = () => {
   let navigate = useNavigate();
   const submitHandler = (e) => {
