@@ -1,24 +1,15 @@
 import { useState } from "react";
 import { Container, Form, Navbar } from "./style";
 import { Logo } from "../../components/navbar/style";
-import { withRouter } from "react-router-dom";
+
 const ContactMePage = () => {
-  const submitForm = (e) => {
-    e.preventDefault();
-    this.props.history.push("/contact-follow-up"); // <--- The page you want to redirect your user to.
-  };
   return (
     <>
       <Navbar>
         <Logo to="/">GP_</Logo>
       </Navbar>
       <Container>
-        <Form
-          name="contact"
-          method="post"
-          autoComplete="on"
-          onSubmit={submitForm}
-        >
+        <Form name="contact" method="post" autoComplete="on">
           <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="firstName">Name</label>
           <input
