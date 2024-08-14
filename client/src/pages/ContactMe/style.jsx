@@ -37,11 +37,19 @@ export const Form = styled.form`
     border-radius: 2px;
     font-size: 1.4rem;
     padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    background-color: ${(props) => props.theme.colors.platinum};
   }
   button:hover {
     transition: 0.4s ease-in-out;
     background-color: ${(props) => props.theme.colors.orangeweb};
+  }
+  label {
+    color: ${(props) => props.theme.colors.platinum};
+    font-weight: 600;
+    font-size: 1.2em;
   }
 `;

@@ -11,19 +11,12 @@ export const ContactMePage = () => {
       <Container>
         <Form name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
-          <input placeholder="name*" type="text" name="name" required={true} />
-          <input
-            placeholder="email address*"
-            type="email"
-            name="email"
-            required={true}
-          />
-          <textarea
-            maxLength={300}
-            placeholder="message (max 300 characters)*"
-            name="message"
-            required={true}
-          />
+          <label>Name</label>
+          <input type="text" name="name" required={true} />
+          <label>Email</label>
+          <input type="email" name="email" required={true} />
+          <label>Message</label>
+          <textarea maxLength={500} name="message" required={true} />
           <button type="submit">Submit</button>
         </Form>
       </Container>

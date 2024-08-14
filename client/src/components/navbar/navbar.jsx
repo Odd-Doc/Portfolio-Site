@@ -30,16 +30,13 @@ export const Navbar = () => {
       case screenCheck(375, screenWidth):
         yOffset = -65;
         break;
-
       default:
         yOffset = 55;
-
         break;
     }
 
     let y = el.getBoundingClientRect().top + window.scrollY + yOffset;
     window.scrollTo({ top: y, behavior: "smooth" });
-    console.log(`yOffset = ${yOffset} | screenWidth = ${screenWidth}`);
   };
 
   return (

@@ -43,8 +43,6 @@ export const NavbarMenu = styled.ul`
         transition: 0.3s;
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
-            
-
    
     a {
       color: black;
