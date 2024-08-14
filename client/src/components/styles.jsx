@@ -123,7 +123,7 @@ export const ProjectImageCard = styled.div`
   display: block;
   color: inherit;
   background-position: center center;
-  box-shadow: black -20px 10px 75px;
+  box-shadow: #1b2030 -14px 17px 35px;
 
   ${media.sm`
   height: 250px;

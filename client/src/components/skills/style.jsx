@@ -21,7 +21,7 @@ const reveal = keyframes`
 export const Container = styled(StyledComponentDiv)`
   margin: 0;
   padding: 1rem;
-  background-color: ${color.platinum};
+  background-color: ${(props) => props.theme.colors.platinum};
   i {
   }
 `;

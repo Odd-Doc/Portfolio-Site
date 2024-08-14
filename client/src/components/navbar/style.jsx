@@ -14,6 +14,8 @@ export const Bar = styled.nav`
   align-items: center;
   padding: 1rem;
   z-index: 100;
+  box-shadow: black -5px 0.25px 10px;
+
   background-color: ${(props) => props.theme.colors.platinum};
   ${media.sm`
     width:100%;

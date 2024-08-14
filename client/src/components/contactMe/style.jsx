@@ -9,8 +9,7 @@ import {
 import { Link } from "react-router-dom";
 
 export const Container = styled(StyledComponentDiv)`
-  /* background-color: ${color.platinum}; */
-  /* text-align: center; */
+  background-color: ${(props) => props.theme.colors.platinum};
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -23,8 +22,7 @@ export const Container = styled(StyledComponentDiv)`
     margin-top: 80px;
   }
   .have-an-idea {
-    /* padding-bottom: 20px; */
-    color: ${color.oxfordblue};
+    color: ${(props) => props.theme.colors.oxfordblue};
   }
 `;
 
