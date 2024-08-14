@@ -5,7 +5,8 @@ export const Container = styled.div`
   display: flex;
   align-content: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
   padding-left: 32%;
   padding-right: 32%;
@@ -78,7 +79,6 @@ export const MessageCard = styled.div`
   color: chartreuse;
   padding: 2rem;
   border-radius: 5px;
-  flex: 1 1 100vw;
   display: flex;
   justify-content: center;
 `;
@@ -89,12 +89,14 @@ export const BackToHome = styled.div`
   animation-delay: 4.5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
-  background-color: ${(props) => props.theme.colors.orangeweb};
+  display: flex;
+  text-align: center;
   a {
     text-decoration: none;
     color: ${(props) => props.theme.colors.oxfordblue};
     background-color: ${(props) => props.theme.colors.orangeweb};
     padding: 1rem;
+    justify-content: stretch;
     border-radius: 5px;
   }
 `;
