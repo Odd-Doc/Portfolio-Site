@@ -22,7 +22,13 @@ export const ContactMePage = () => {
         <Logo to="/">GP_</Logo>
       </Navbar>
       <Container>
-        <Form id="contact-form" name="contact" method="post" autoComplete="on">
+        <Form
+          id="contact-form"
+          name="contact"
+          method="post"
+          autoComplete="on"
+          action={submitHandler}
+        >
           <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="firstName">Name</label>
           <input
