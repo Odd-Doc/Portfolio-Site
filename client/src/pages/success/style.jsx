@@ -3,18 +3,15 @@ import styled, { keyframes } from "styled-components";
 export const Container = styled.div`
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-left: 32%;
+  padding-right: 32%;
   background-color: ${(props) => props.theme.colors.oxfordblue};
 `;
 
-export const MessageCard = styled.div`
-  /* background-color: ${(props) => props.theme.colors.platinum}; */
-  background-color: black;
-  color: chartreuse;
-  padding: 2rem;
-  border-radius: 12px;
-`;
 const loading = keyframes`
 0% {
   color: transparent;
@@ -60,9 +57,43 @@ const confirm = keyframes`
     }
     
 `;
+const backToHome = keyframes`
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
+    
+`;
 export const Confirmation = styled.div`
   opacity: 0;
   animation-name: ${confirm};
   animation-delay: 4.5s;
   animation-fill-mode: forwards;
+`;
+export const MessageCard = styled.div`
+  background-color: black;
+  color: chartreuse;
+  padding: 2rem;
+  border-radius: 5px;
+  flex: 1 1 100vw;
+  display: flex;
+  justify-content: center;
+`;
+export const BackToHome = styled.div`
+  opacity: 0;
+  animation-name: ${backToHome};
+  animation-duration: 2s;
+  animation-delay: 4.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  border-radius: 5px;
+  background-color: ${(props) => props.theme.colors.orangeweb};
+  padding: 1rem;
+  a {
+    text-decoration: none;
+    color: ${(props) => props.theme.colors.oxfordblue};
+  }
 `;

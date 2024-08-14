@@ -7,6 +7,7 @@ import {
   ProjectImageCard,
   SectionTitle,
 } from "../styles";
+import { Link } from "react-router-dom";
 
 const slideInRight = keyframes`
  from {
@@ -97,30 +98,29 @@ export const ProjectSynopsis = styled.div`
       padding:1rem;
       `}
 `;
-export const LearnMore = styled.div`
-  margin-top: 25px;
-  position: relative;
+
+export const CallToAction = styled(Link)`
+  text-decoration: none;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: ${(props) => props.theme.colors.orangeweb};
+  color: ${(props) => props.theme.colors.oxfordblue};
+  text-align: center;
+  animation: ${(props) =>
+    props.theme.inView
+      ? css`
+          ${reveal} 1s ease-in 1s;
+        `
+      : ""};
+  animation-fill-mode: both;
+  border-radius: 10px;
+  font-size: 1.2em;
+`;
+export const Project = styled.div`
   display: flex;
-  justify-content: center;
-
-  a {
-    border-radius: 6px;
-    text-decoration: none;
-    padding: 0.5rem;
-    background-color: ${(props) => props.theme.colors.orangeweb};
-    color: ${(props) => props.theme.colors.oxfordblue};
-    text-align: center;
-    animation: ${(props) =>
-      props.theme.inView
-        ? css`
-            ${reveal} 1s ease-in;
-          `
-        : ""};
-    animation-fill-mode: both;
-
-    ${media.sm`
-      width: 100px;
-    `}
+  flex-direction: column;
+  ${CallToAction} {
+    align-self: center;
   }
 `;
 

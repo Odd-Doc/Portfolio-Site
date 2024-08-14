@@ -9,18 +9,18 @@ import {
 
 export const Container = styled.div`
   position: relative;
-  padding-top: 5rem;
+  /* padding-top: 5rem;
   padding-bottom: 5rem;
   padding-left: 5rem;
-  padding-right: 5rem;
+  padding-right: 5rem; */
   background-color: ${(props) => props.theme.colors.oxfordblue};
   ${media.sm`
     
     flex-direction: column;
-  padding-top: 2rem;
+  /* padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right: 2rem; */
         `}
 `;
 
@@ -29,13 +29,19 @@ export const Content = styled.div`
   gap: 2rem;
   color: white;
   font-size: 1.1em;
-
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 1.25em;
   ${media.sm`
-    
+    padding:3rem;
     flex-direction: column;
+    align-items:flex-start;
+    margin:0;
   
-        `}
+  `}
 
   .footer-nav {
     text-decoration: none;
@@ -43,7 +49,7 @@ export const Content = styled.div`
   }
 `;
 export const IconGroup = styled.div`
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   display: flex;
   gap: 2rem;
   img {

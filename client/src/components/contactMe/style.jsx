@@ -30,14 +30,16 @@ export const Container = styled(StyledComponentDiv)`
 
 export const Title = styled(SectionTitle)``;
 export const ContactMeLink = styled(Link)`
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   text-decoration: none;
   padding: 2rem;
-  background-color: ${color.oxfordblue};
-  color: ${color.platinum};
+  background-color: ${(props) => props.theme.colors.oxfordblue};
+  color: ${(props) => props.theme.colors.platinum};
   border-radius: 10px;
+  font-size: 1.2em;
+  i {
+    padding-right: 1rem;
+    color: ${(props) => props.theme.colors.orangeweb};
+  }
 `;
 export const IdeaImage = styled.img`
   position: relative;

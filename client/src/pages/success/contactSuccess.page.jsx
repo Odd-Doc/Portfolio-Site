@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Container,
   LoadDots,
   LoadDot,
   MessageCard,
   Confirmation,
+  BackToHome,
 } from "./style";
 const TypeWriter = ({ text, delay }) => {
   const [currentText, setCurrentText] = useState("");
@@ -52,6 +54,9 @@ export const ContactSuccess = () => {
           </Confirmation>
         </div>
       </MessageCard>
+      <BackToHome>
+        <Link to="/">Back to Home</Link>
+      </BackToHome>
     </Container>
   );
 };

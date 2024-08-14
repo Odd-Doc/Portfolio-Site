@@ -7,8 +7,10 @@ export const ContactMe = () => {
       <hr></hr>
       <h3 className="have-an-idea">Have an idea?</h3>
 
-      <ContactMeLink to="/get-in-touch">Let's Make Something!</ContactMeLink>
-      {/* <IdeaImage src={ideaImg} /> */}
+      <ContactMeLink to="/get-in-touch">
+        <i className="fa-solid fa-envelope"></i>
+        Let's Talk!
+      </ContactMeLink>
     </Container>
   );
 };
