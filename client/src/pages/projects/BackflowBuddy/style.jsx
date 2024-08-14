@@ -119,7 +119,7 @@ export const StackingCard = styled.li`
 
   img {
     width: 100vw;
-    height: 90vh;
+
     ${media.sm`
       height:35vh;
     `};
