@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { Container, Form, Navbar } from "./style";
 import { Logo } from "../../components/navbar/style";
-
-export const ContactMePage = () => {
+import { withRouter } from "react-router-dom";
+const ContactMePage = () => {
+  const submitForm = (e) => {
+    e.preventDefault();
+    this.props.history.push("/contact-follow-up"); // <--- The page you want to redirect your user to.
+  };
   return (
     <>
       <Navbar>
@@ -13,10 +17,10 @@ export const ContactMePage = () => {
           name="contact"
           method="post"
           autoComplete="on"
-          action="/contact-success"
+          onSubmit={submitForm}
         >
           <input type="hidden" name="form-name" value="contact" />
-          <label for="firstName">Name</label>
+          <label htmlFor="firstName">Name</label>
           <input
             id="firstName"
             type="text"
@@ -24,7 +28,7 @@ export const ContactMePage = () => {
             required={true}
             autoComplete="name"
           />
-          <label for="givenEmail">Email</label>
+          <label htmlFor="givenEmail">Email</label>
           <input
             id="givenEmail"
             type="email"
@@ -32,7 +36,7 @@ export const ContactMePage = () => {
             required={true}
             autoComplete="email"
           />
-          <label for="msg">Message</label>
+          <label htmlFor="msg">Message</label>
           <textarea id="msg" maxLength={500} name="message" required={true} />
           <button type="submit">Submit</button>
         </Form>
@@ -40,3 +44,5 @@ export const ContactMePage = () => {
     </>
   );
 };
+
+export default withRouter(ContactMePage);
