@@ -27,7 +27,8 @@ export const ContactMePage = () => {
           name="contact"
           method="post"
           autoComplete="on"
-          action={submitHandler}
+          // action={submitHandler}
+          onSubmit={submitHandler}
         >
           <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="firstName">Name</label>
