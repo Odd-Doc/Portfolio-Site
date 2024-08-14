@@ -3,13 +3,26 @@ import { Container, Form, Navbar } from "./style";
 import { Logo } from "../../components/navbar/style";
 
 const ContactMePage = () => {
+  let navigate = useNavigate();
+  const submitHandler = (e) => {
+    e.preventDefault();
+    let myForm = document.getElementById("contact-form");
+    let formData = new FormData(myForm);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate("/contact-follow-up"))
+      .catch((error) => alert(error));
+  };
   return (
     <>
       <Navbar>
         <Logo to="/">GP_</Logo>
       </Navbar>
       <Container>
-        <Form name="contact" method="post" autoComplete="on">
+        <Form id="contact-form" name="contact" method="post" autoComplete="on">
           <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="firstName">Name</label>
           <input
