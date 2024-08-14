@@ -44,6 +44,7 @@ export const Form = styled.form`
     margin-right: auto;
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    color: ${(props) => props.theme.colors.oxfordblue};
     background-color: ${(props) => props.theme.colors.platinum};
   }
   button:hover {
