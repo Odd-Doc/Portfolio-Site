@@ -89,11 +89,12 @@ export const BackToHome = styled.div`
   animation-delay: 4.5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
-  border-radius: 5px;
   background-color: ${(props) => props.theme.colors.orangeweb};
-  padding: 1rem;
   a {
     text-decoration: none;
     color: ${(props) => props.theme.colors.oxfordblue};
+    background-color: ${(props) => props.theme.colors.orangeweb};
+    padding: 1rem;
+    border-radius: 5px;
   }
 `;

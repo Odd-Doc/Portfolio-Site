@@ -19,7 +19,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects/backflowbuddy" element={<BackflowBuddy />} />
             <Route path="/get-in-touch" element={<ContactMePage />} />
-            <Route path="/contact-success" element={<ContactSuccess />} />
           </Routes>
         </ThemeProvider>
       </BrowserRouter>

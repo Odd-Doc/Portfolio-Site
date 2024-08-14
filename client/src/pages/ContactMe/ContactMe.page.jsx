@@ -9,7 +9,12 @@ export const ContactMePage = () => {
         <Logo to="/">GP_</Logo>
       </Navbar>
       <Container>
-        <Form name="contact" method="post" autoComplete="on">
+        <Form
+          name="contact"
+          method="post"
+          autoComplete="on"
+          action="/pages/success/contactSucces.page"
+        >
           <input type="hidden" name="form-name" value="contact" />
           <label for="firstName">Name</label>
           <input
