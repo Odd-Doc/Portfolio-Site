@@ -19,7 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects/backflowbuddy" element={<BackflowBuddy />} />
             <Route path="/get-in-touch" element={<ContactMePage />} />
-            {/* <Route path="/contact-follow-up" element={<ContactSuccess />} /> */}
+            <Route path="/contact-follow-up" element={<ContactSuccess />} />
           </Routes>
         </ThemeProvider>
       </BrowserRouter>
