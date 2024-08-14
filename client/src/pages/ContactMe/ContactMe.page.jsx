@@ -13,7 +13,7 @@ export const ContactMePage = () => {
           name="contact"
           method="post"
           autoComplete="on"
-          action="/pages/success/contactSucces.page"
+          action="/contact-success"
         >
           <input type="hidden" name="form-name" value="contact" />
           <label for="firstName">Name</label>
