@@ -44,7 +44,7 @@ export const BackflowBuddy = () => {
       </Navbar>
       <Header>
         <img className="bb-icon" src={bbIcon} />
-        <h1>Backflow Buddy 🚰 🔧</h1>
+        <h1>Backflow Buddy 🚰</h1>
         <p>Backflow Assembly Simulator And Licensing Exam Prep</p>
         <Link
           className="git-hub-link--header"
