@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container, Form, Navbar } from "./style";
 import { Logo } from "../../components/navbar/style";
 
-const ContactMePage = () => {
+export const ContactMePage = () => {
   let navigate = useNavigate();
   const submitHandler = (e) => {
     e.preventDefault();
@@ -48,5 +48,3 @@ const ContactMePage = () => {
     </>
   );
 };
-
-export default withRouter(ContactMePage);
