@@ -1,5 +1,4 @@
 import styled, { css, keyframes } from "styled-components";
-import bb1 from "../../../assets/images/bb-mainmenu.png";
 import {
   StyledComponentDiv,
   media,
@@ -7,7 +6,6 @@ import {
 } from "../../../components/styles";
 import { Bar } from "../../../components/navbar/style";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 
 export const Container = styled(StyledComponentDiv)`
   display: block;
@@ -48,6 +46,13 @@ export const Header = styled.div`
     ${media.sm`
       width:50%;
     `}
+  }
+  a {
+    text-decoration: none;
+    color: ${(props) => props.theme.colors.platinum};
+  }
+  i {
+    padding-right: 1rem;
   }
 `;
 

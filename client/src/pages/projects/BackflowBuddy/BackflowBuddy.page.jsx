@@ -20,6 +20,7 @@ import { Navbar } from "./style";
 import { Logo } from "../../../components/navbar/style";
 import { HashLink } from "react-router-hash-link";
 import { scrollTo } from "../../../components/footer/footer";
+import { Link } from "react-router-dom";
 const ImagePool = [bb1, bb2, bb3, bb4];
 const Deck = ({ cards }) => {
   return (
@@ -45,6 +46,9 @@ export const BackflowBuddy = () => {
         <img className="bb-icon" src={bbIcon} />
         <h1>Backflow Buddy 🚰 🔧</h1>
         <p>Backflow Assembly Simulator And Licensing Exam Prep</p>
+        <Link to="https://github.com/Odd-Doc/BackflowBuddy">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>View on GitHub
+        </Link>
       </Header>
       <Main>
         <StackingDeck>
