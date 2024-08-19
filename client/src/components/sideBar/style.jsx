@@ -29,14 +29,15 @@ const slideInLeft = keyframes`
 
 export const Container = styled.div`
   /* color: ${(props) => props.theme.colors.platinum}; */
-
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 0%;
   align-items: center;
   flex-direction: column;
   /* background-color: ${(props) => props.theme.colors.platinum}; */
   background-color: aquamarine;
-  height: 100px;
+
   ${media.sm`
     font-size: 1em;
   `}
