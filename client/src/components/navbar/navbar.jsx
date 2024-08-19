@@ -9,6 +9,7 @@ import {
   BurgerBar,
   NavLink,
 } from "./style";
+import { SideBar } from "../sideBar/sideBar";
 export const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
   const handleBurgerClick = () => {

@@ -1,7 +1,8 @@
 import { styled, keyframes } from "styled-components";
-import avatar from "../../assets/images/avatar.png";
 
 import { media, colorScheme_main as color } from "../styles";
+
+import { ContactMeLink as CTA } from "../contactMe/style";
 
 const fadeIn = keyframes`
  0% {
@@ -59,6 +60,14 @@ export const Container = styled.div`
   ${media.sm`
     font-size: 1em;
   `}
+  & .cta {
+    background-color: ${(props) => props.theme.colors.orangeweb};
+    color: ${(props) => props.theme.colors.oxfordblue};
+    padding: 1rem;
+    i {
+      color: ${(props) => props.theme.colors.oxfordblue};
+    }
+  }
 `;
 
 export const Title = styled.h1`
@@ -98,4 +107,7 @@ export const ViewWork = styled.div`
     text-decoration: none;
     color: inherit;
   }
+`;
+export const ContactButton = styled(CTA)`
+  background-color: ${(props) => props.theme.colors.platinum};
 `;

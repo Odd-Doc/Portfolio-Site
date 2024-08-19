@@ -7,11 +7,13 @@ import { ContactMe } from "../../components/contactMe/contactMe";
 import { Container } from "./style";
 import { Outlet } from "react-router-dom";
 import { Footer } from "../../components/footer/footer";
+import { SideBar } from "../../components/sideBar/sideBar";
 
 const Home = () => {
   return (
     <Container>
       <Navbar />
+      <SideBar />
       <Header />
       <Projects />
       <About />

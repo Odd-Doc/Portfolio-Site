@@ -6,9 +6,9 @@ import {
   BlinkingCaret,
   MyName,
   ViewWork,
+  ContactButton,
 } from "./style";
-
-import avatar from "../../assets/images/avatar.png";
+import { ContactMeLink } from "../contactMe/style";
 
 export const Header = () => {
   return (
@@ -37,6 +37,10 @@ export const Header = () => {
             arrow_downward_alt
           </Link>
         </ViewWork>
+        <ContactMeLink className="cta" to="/get-in-touch">
+          <i className="fa-solid fa-envelope"></i>
+          Let's Talk!
+        </ContactMeLink>
       </Container>
     </>
   );
