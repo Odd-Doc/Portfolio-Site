@@ -17,6 +17,9 @@ export const Form = styled.form`
   flex-direction: column;
   gap: 1rem;
   width: 75%;
+  ${media.sm`
+    width:90%;
+  `}
   input {
     height: 2.5rem;
     border: none;

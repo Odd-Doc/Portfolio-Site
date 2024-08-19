@@ -32,6 +32,12 @@ export const TriggerWrapper = styled.div`
     height: 125vh;
     transform: translateY(96em);
   }
+  ${media.sm`
+   && .in {
+    height: 185vh;
+    transform: translateY(63em);
+  } 
+  `}
 `;
 export const Container = styled.div`
   position: fixed;
@@ -39,17 +45,22 @@ export const Container = styled.div`
   left: ${(props) => (props.theme.inView ? "0%" : "-100%")};
   transition: ease-in-out 0.5s;
   align-items: center;
-
+  z-index: 11;
   background-color: ${(props) => props.theme.colors.orangeweb};
-  padding: 1.2rem;
+  padding: 1rem;
   border-radius: 0px 8px 8px 0px;
   ${media.sm`
     font-size: 1em;
+    padding: 0.5rem;
   `};
   .icon-group {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 1.25em;
+  }
+  i {
+    color: ${(props) => props.theme.colors.oxfordblue};
   }
 `;
 export const InViewTrigger = styled.div`
