@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import viteLogo from "/vite.svg";
 import Home from "./pages/home/home";
 import "./App.css";
 import ScrollToTop from "./components/utils/ScrollToTop";
