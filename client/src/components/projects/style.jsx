@@ -1,5 +1,7 @@
 import styled, { keyframes, css } from "styled-components";
 import bb from "../../assets/images/bb-mainmenu.png";
+import franksLanding from "../../assets/images/franks-landing.png";
+
 import { media } from "../styles";
 import {
   StyledComponentDiv,
@@ -55,7 +57,6 @@ const reveal = keyframes`
 `;
 export const Title = styled(SectionTitle)``;
 export const ProjectCard = styled(ProjectImageCard)`
-  background-image: url(${bb});
   animation: ${(props) =>
     props.theme.inView
       ? css`
@@ -77,6 +78,19 @@ export const ProjectCard = styled(ProjectImageCard)`
 
 export const Container = styled(StyledComponentDiv)`
   background-color: ${(props) => props.theme.colors.platinum};
+  hr {
+    height: 2px;
+    border: none;
+    background-color: ${(props) => props.theme.colors.oxfordblue};
+    width: 80%;
+    margin-bottom: 5rem;
+  }
+  #backflow-buddy {
+    background-image: url(${bb});
+  }
+  #franks-relocation {
+    background-image: url(${franksLanding});
+  }
   ${media.sm`
     
   `}
@@ -120,6 +134,7 @@ export const CallToAction = styled(Link)`
   font-size: 1.2em;
 `;
 export const Project = styled.div`
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   ${CallToAction} {

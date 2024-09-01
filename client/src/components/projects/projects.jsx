@@ -18,11 +18,11 @@ export const Projects = () => {
   return (
     <ThemeProvider theme={theme}>
       <Container id="projects">
-        <SectionTitle ref={ref}>
+        <SectionTitle>
           <h3>Recent Projects</h3>
         </SectionTitle>
         <Project>
-          <ProjectCard>
+          <ProjectCard ref={ref} id="backflow-buddy">
             <ProjectSynopsis>
               <div className="project-title">
                 Backflow Device Testing Simulator -
@@ -33,8 +33,19 @@ export const Projects = () => {
               </div>
             </ProjectSynopsis>
           </ProjectCard>
-
           <CallToAction to="/projects/backflowbuddy">Learn More</CallToAction>
+        </Project>
+        <hr />
+        <Project>
+          <ProjectCard id="franks-relocation">
+            <ProjectSynopsis>
+              <div className="project-title">Franks Relocation -</div>
+              <div className="project-synop">Local moving company website.</div>
+            </ProjectSynopsis>
+          </ProjectCard>
+          <CallToAction to="/projects/franksrelocation">
+            Learn More
+          </CallToAction>
         </Project>
       </Container>
     </ThemeProvider>
