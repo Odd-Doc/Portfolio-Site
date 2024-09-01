@@ -143,7 +143,7 @@ export const BackToTop = styled.div`
     padding: 1rem;
     border-radius: 12px;
     text-decoration: none;
-    color: ${(props) => props.theme.colors.platinum};
-    background-color: ${(props) => props.theme.colors.oxfordblue};
+    color: ${(props) => props.theme.colors.oxfordblue};
+    background-color: ${(props) => props.theme.colors.orangeweb};
   }
 `;

@@ -19,6 +19,7 @@ import { Logo } from "../../../components/navbar/style";
 import { HashLink } from "react-router-hash-link";
 import { scrollTo } from "../../../components/footer/footer";
 import { Link } from "react-router-dom";
+import TechUsed from "../../../components/TechUsed/TechUsed";
 const ImagePool = [franksLanding];
 const Deck = ({ cards }) => {
   return (
@@ -41,9 +42,8 @@ export const FranksRelocation = () => {
         <Logo to="/">GP_</Logo>
       </Navbar>
       <Header>
-        <img className="bb-icon" src={bbIcon} />
-        <h1>Backflow Buddy 🚰</h1>
-        <p>Backflow Assembly Simulator And Licensing Exam Prep</p>
+        <h1>Franks Relocation 🚚</h1>
+        <p>A website for a local moving company in my community</p>
         <Link
           className="git-hub-link--header"
           to="https://github.com/Odd-Doc/franks-moving-service"
@@ -51,42 +51,27 @@ export const FranksRelocation = () => {
           View on GitHub
           <i className="fa-solid fa-arrow-up-right-from-square"></i>
         </Link>
-        <Link
-          className="app-store-badge"
-          to="https://apps.apple.com/us/app/backflow-buddy/id6475203858"
-        >
-          <img src={appStoreBadge} alt="App Store Badge" />
-        </Link>
       </Header>
       <Main>
         <StackingDeck>
-          <Deck
-            cards={[
-              { source: bb1, id: "b1" },
-              { source: bb2, id: "b2" },
-              { source: bb3, id: "b3" },
-              { source: bb4, id: "bb4" },
-            ]}
-          />
+          <Deck cards={[{ source: franksLanding, id: "franks-landing" }]} />
         </StackingDeck>
       </Main>
 
       <Content>
-        <p>A labor of love.</p>
-        This was my first personal project that I ever published. The idea for
-        this app was the very reason I set out on this journey learning to code,
-        back in 2021. Having a full time job (and two kids born along the way),
-        meant digging deep every night and every weekend. <p></p>
-        Having no idea where to start, I began working my way down the
-        FreeCodeCamp curriculum. After completing most of the curriculum by May
-        of 2022, I realized that this type of app could not be created using web
-        tech, at least not at that time. I switched gears and dove head first
-        into Unity and C#. My goal was to solo the entire project, from soup to
-        nuts. I created each and every asset from scratch, except the water -
-        see Zibra Liquids. It took me a little over 2 years to learn Unity, C#,
-        Blender (3D modeling, topology, textures, shaders etc.) and push through
-        all of the post build production hurdles to eventually self publish this
-        application.
+        <div className="tech-used">
+          <TechUsed used={["React", "Styled-Components"]} />
+        </div>
+        <div>
+          I designed and developed a website for a local moving company in my
+          community to enhance its online presence and attract more customers.
+          The website features a user-friendly interface, showcasing the
+          company's services, rates, and customer testimonials. I included
+          essential sections like "About Us," "Services," "Contact," and an
+          online quote request feature using EmailJS to streamline the process
+          for potential clients. Additionally, the site is optimized for mobile
+          devices.
+        </div>
       </Content>
 
       <BackToTop>
