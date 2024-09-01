@@ -22,7 +22,7 @@ export const Projects = () => {
           <h3>Recent Projects</h3>
         </SectionTitle>
         <Project>
-          <ProjectCard ref={ref}>
+          <ProjectCard ref={ref} id="backflow-buddy">
             <ProjectSynopsis>
               <div className="project-title">
                 Backflow Device Testing Simulator -
@@ -37,7 +37,7 @@ export const Projects = () => {
         </Project>
         <hr />
         <Project>
-          <ProjectCard>
+          <ProjectCard id="franks-relocation">
             <ProjectSynopsis>
               <div className="project-title">Franks Relocation -</div>
               <div className="project-synop">Local moving company website.</div>
