@@ -77,6 +77,13 @@ export const ProjectCard = styled(ProjectImageCard)`
 
 export const Container = styled(StyledComponentDiv)`
   background-color: ${(props) => props.theme.colors.platinum};
+  hr {
+    height: 2px;
+    border: none;
+    background-color: ${(props) => props.theme.colors.oxfordblue};
+    width: 80%;
+    margin-bottom: 5rem;
+  }
   ${media.sm`
     
   `}
@@ -120,6 +127,7 @@ export const CallToAction = styled(Link)`
   font-size: 1.2em;
 `;
 export const Project = styled.div`
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   ${CallToAction} {
