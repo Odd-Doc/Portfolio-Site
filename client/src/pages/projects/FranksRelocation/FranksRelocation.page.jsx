@@ -53,9 +53,11 @@ export const FranksRelocation = () => {
         </Link>
       </Header>
       <Main>
-        <StackingDeck>
-          <Deck cards={[{ source: franksLanding, id: "franks-landing" }]} />
-        </StackingDeck>
+        <a href="https://franksrelocation.com/">
+          <StackingDeck>
+            <Deck cards={[{ source: franksLanding, id: "franks-landing" }]} />
+          </StackingDeck>
+        </a>
       </Main>
 
       <Content>
