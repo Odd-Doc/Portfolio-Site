@@ -69,10 +69,9 @@ export const FranksRelocation = () => {
           community to enhance its online presence and attract more customers.
           The website features a user-friendly interface, showcasing the
           company's services, rates, and customer testimonials. I included
-          essential sections like "About Us," "Services," "Contact," and an
-          online quote request feature using EmailJS to streamline the process
-          for potential clients. Additionally, the site is optimized for mobile
-          devices.
+          essential sections like "About Us," "Services," and an online quote
+          request feature using EmailJS to streamline the process for potential
+          clients. Additionally, the site is optimized for mobile devices.
         </div>
       </Content>
 
