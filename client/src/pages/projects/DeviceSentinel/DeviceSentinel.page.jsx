@@ -78,8 +78,9 @@ export const DeviceSentinel = () => {
           }}
         >
           <iframe
-            width="760"
-            height="515"
+            style={{ borderRadius: 12 }}
+            width="860"
+            height="615"
             src="https://www.youtube.com/embed/_-mL1LppgZg?si=bCVQXcX8FUSUyfCD"
             title="YouTube video player"
             frameborder="0"
@@ -91,7 +92,7 @@ export const DeviceSentinel = () => {
       </Main>
 
       <Content>
-        <div className="tech-used">
+        <div style={{ marginLeft: 200, marginRight: 200 }}>
           <TechUsed used={["React Native", "Expo", "TypeScript"]} />
         </div>
         <div style={{ padding: 100 }}>
