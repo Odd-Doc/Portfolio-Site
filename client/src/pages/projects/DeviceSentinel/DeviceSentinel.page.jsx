@@ -71,15 +71,21 @@ export const DeviceSentinel = () => {
           mind-explosion gesture. An overlaid animation enforces the explosion
           character.
         </video> */}
-        <div style={{ paddingTop: "100px" }}>
-          <video
-            style={{ borderRadius: 12 }}
-            controls="controls"
-            width="100%"
-            name="Backflow-Sentinel-Preview"
-            autoPlay
-            muted
-            src="/src/assets/video/2024-10-04 15-04-06.mp4"
+        <div
+          style={{
+            paddingTop: "100px",
+            justifyContent: "center",
+          }}
+        >
+          <iframe
+            width="760"
+            height="515"
+            src="https://www.youtube.com/embed/_-mL1LppgZg?si=bCVQXcX8FUSUyfCD"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
           />
         </div>
       </Main>
