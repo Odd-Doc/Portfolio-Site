@@ -1,6 +1,7 @@
 import styled, { keyframes, css } from "styled-components";
 import bb from "../../assets/images/bb-mainmenu.png";
 import franksLanding from "../../assets/images/franks-landing.png";
+import deviceSentinel from "../../assets/images/Screenshot-xc-sentinel.png";
 
 import { media } from "../styles";
 import {
@@ -90,6 +91,10 @@ export const Container = styled(StyledComponentDiv)`
   }
   #franks-relocation {
     background-image: url(${franksLanding});
+  }
+  #device-sentinel {
+    background-image: url(${deviceSentinel});
+    background-color: ${(props) => props.theme.colors.platinum};
   }
   ${media.sm`
     

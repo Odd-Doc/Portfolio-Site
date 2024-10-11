@@ -8,7 +8,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "./Theme";
 import { ContactSuccess } from "./pages/success/contactSuccess.page";
 import { FranksRelocation } from "./pages/projects/FranksRelocation/FranksRelocation.page";
-
+import { DeviceSentinel } from "./pages/projects/DeviceSentinel/DeviceSentinel.page";
 function App() {
   return (
     <>
@@ -17,6 +17,11 @@ function App() {
         <ThemeProvider theme={theme}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route
+              path="/projects/devicesentinel"
+              element={<DeviceSentinel />}
+            />
+
             <Route path="/projects/backflowbuddy" element={<BackflowBuddy />} />
             <Route
               path="/projects/franksrelocation"
