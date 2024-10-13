@@ -44,6 +44,7 @@ export const DeviceSentinel = () => {
       <Header>
         <h1>Cross Connection Compliance 🔎</h1>
         <p>A cross-platform compliance engine</p>
+        <p>MERN stack</p>
 
         <Link
           className="git-hub-link--header"
