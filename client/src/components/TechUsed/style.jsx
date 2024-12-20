@@ -14,18 +14,18 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 400px;
-  margin-right: 400px;
+  /* margin-left: 400px;
+  margin-right: 400px; */
   margin-bottom: 2rem;
   border-radius: 8px;
   padding: 2rem;
   ${media.lg`
-      margin-left: 200px;
-  margin-right:200px;
+      /* margin-left: 200px;
+  margin-right:200px; */
   `}
   ${media.md`
-      margin-left: 100px;
-  margin-right: 100px;
+      /* margin-left: 100px;
+  margin-right: 100px; */
   `}
   ${media.sm`
       margin-left: 0;

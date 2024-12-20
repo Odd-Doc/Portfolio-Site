@@ -80,8 +80,7 @@ export const DeviceSentinel = () => {
         >
           <iframe
             style={{ borderRadius: 12 }}
-            width="860"
-            height="615"
+            width="100%"
             src="https://www.youtube.com/embed/_-mL1LppgZg?si=bCVQXcX8FUSUyfCD"
             title="YouTube video player"
             frameborder="0"
@@ -93,10 +92,10 @@ export const DeviceSentinel = () => {
       </Main>
 
       <Content>
-        <div style={{ marginLeft: 200, marginRight: 200 }}>
+        <div style={{}}>
           <TechUsed used={["React Native", "Expo", "TypeScript"]} />
         </div>
-        <div style={{ padding: 100 }}>
+        <div style={{ padding: "5%" }}>
           <h2>Project Overview 📓:</h2> A robust, cross-platform backflow
           compliance application. My aim is to enhance and simplify device and
           facility management while providing compliance tracking capabilities.
